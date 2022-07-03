@@ -21,7 +21,7 @@ const Browser: React.FC = () => {
 			onChange={(index) => setPage(pages[index])}
 		>
 			<Tab.List className="flex items-center pt-3 px-3 sm:pl-0">
-				<div className="hidden sm:flex space-x-1.5 lg:space-x-3 p-3 items-center justify-center">
+				<div className="hidden sm:flex space-x-1.5 lg:space-x-3 p-3 items-center justify-center lg:px-6">
 					<Dot />
 					<Dot />
 					<Dot />
