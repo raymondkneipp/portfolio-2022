@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Tab } from '@headlessui/react';
-import { IoDiamond, IoFlashSharp, IoSearchSharp } from 'react-icons/io5';
+import { IoDiamond, IoFlashSharp, IoSearchSharp } from 'react-icons/io5/index';
 import BrowserTab from './BrowserTab/Index';
 import Dot from './Dot/Index';
 import URL from './URL/Index';
