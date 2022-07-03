@@ -1,0 +1,10 @@
+---
+const { to } = Astro.props;
+---
+
+<a
+	href={to}
+	class='text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800 transition rounded-lg py-1.5 px-3 focus:outline-none focus-visible:ring focus-visible:ring-cyan-500'
+>
+	<slot></slot>
+</a>

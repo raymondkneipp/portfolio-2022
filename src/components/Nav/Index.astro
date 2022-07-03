@@ -1,0 +1,23 @@
+---
+import Link from './Link/Index.astro';
+import MobileNav from './MobileNav/Index';
+---
+
+<nav>
+	<div class='flex items-center justify-between py-10'>
+		<a
+			href='/'
+			class='focus:outline-none focus-visible:ring focus-visible:ring-cyan-500 inline-flex rounded-lg'
+		>
+			<img src='/public/logo.svg' width='80px' />
+		</a>
+		<div class='space-x-3 hidden sm:flex'>
+			<Link to='/'>Home</Link>
+			<Link to='/blog'>Blog</Link>
+			<Link to='/about'>About</Link>
+			<Link to='/portfolio'>Portfolio</Link>
+			<Link to='/contact'>Contact</Link>
+		</div>
+		<MobileNav client:visible />
+	</div>
+</nav>
