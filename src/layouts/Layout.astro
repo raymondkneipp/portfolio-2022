@@ -1,5 +1,6 @@
 ---
 import Container from '@components/Container.astro';
+import CTA from '@components/CTA.astro';
 import Nav from '@components/Nav/Index.astro';
 
 export interface Props {
@@ -22,5 +23,6 @@ const { title } = Astro.props as Props;
 			<Nav />
 		</Container>
 		<slot></slot>
+		<CTA />
 	</body>
 </html>
