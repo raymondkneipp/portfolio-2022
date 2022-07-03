@@ -9,7 +9,7 @@ import {
 	IoMenu,
 	IoPerson,
 	IoReader,
-} from 'react-icons/io5/index';
+} from 'react-icons/io5/index.js';
 import Link from './Link/Index';
 
 const MobileNav: React.FC = () => {

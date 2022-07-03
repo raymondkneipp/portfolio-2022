@@ -1,5 +1,5 @@
 import React from 'react';
-import { IoLockClosed } from 'react-icons/io5/index';
+import { IoLockClosed } from 'react-icons/io5/index.js';
 
 type Props = {
 	children: string;
