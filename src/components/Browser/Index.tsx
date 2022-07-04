@@ -44,10 +44,10 @@ const Browser: React.FC = () => {
 					color="cyan"
 				>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
-						consequuntur repellat! Quaerat officiis temporibus maiores
-						consectetur veritatis, sint, expedita nisi commodi debitis, est ad
-						odio. Doloremque tempora consequuntur quo eius.
+						Your website needs to stand out amidst your vast competition.
+						Something eye-catching, easy to use, and optimized for conversion.
+						Your website is an extension of your business, and there is no
+						one-size-fits-all template.
 					</p>
 				</TabPanel>
 				<TabPanel
@@ -56,10 +56,9 @@ const Browser: React.FC = () => {
 					color="amber"
 				>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
-						consequuntur repellat! Quaerat officiis temporibus maiores
-						consectetur veritatis, sint, expedita nisi commodi debitis, est ad
-						odio. Doloremque tempora consequuntur quo eius.
+						Load time is when you make your first impression. If your website is
+						slow, you and your business look unprofessional. 40% of people will
+						abandon a site if it takes longer than 3 seconds.
 					</p>
 				</TabPanel>
 				<TabPanel
@@ -68,10 +67,10 @@ const Browser: React.FC = () => {
 					color="emerald"
 				>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
-						consequuntur repellat! Quaerat officiis temporibus maiores
-						consectetur veritatis, sint, expedita nisi commodi debitis, est ad
-						odio. Doloremque tempora consequuntur quo eius.
+						Organic search is most often the primary source of a website's
+						traffic. Every time you are ranked lower than a competitor, you are
+						losing money. Good search engine optimization is crucial to being
+						successful.
 					</p>
 				</TabPanel>
 			</Tab.Panels>
