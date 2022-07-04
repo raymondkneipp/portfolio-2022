@@ -4,11 +4,13 @@ import Card from '../components/Card.astro';
 import Hero from '@components/Hero.astro';
 import Container from '@components/Container.astro';
 import Intro from '@components/Intro.astro';
+import Portfolio from '@components/Portfolio.astro';
 ---
 
 <Layout title='Web Developer | Raymond Kneipp'>
 	<main>
 		<Hero />
 		<Intro />
+		<Portfolio client:visible />
 	</main>
 </Layout>
