@@ -51,7 +51,7 @@ const projects = data.data.user.pinnedItems.edges;
 ---
 
 <Container>
-	<section class='py-24 space-y-6'>
+	<section class='py-24 space-y-6' id='portfolio'>
 		<h2 class='text-4xl font-bold text-zinc-100'>Portfolio</h2>
 
 		<div class='grid lg:grid-cols-2 gap-12'>
@@ -67,6 +67,10 @@ const projects = data.data.user.pinnedItems.edges;
 				} = project.node
 
 				const topics = repositoryTopics.nodes
+				const date = `${new Date(createdAt).toLocaleString('default', {
+					month: 'long',
+					year: 'numeric',
+				})}`
 
 				return (
 					<div class="space-y-3">
@@ -75,7 +79,12 @@ const projects = data.data.user.pinnedItems.edges;
 							alt={`screenshot of ${name}`}
 							class="rounded-2xl"
 						/>
-						<h3 class="text-2xl font-bold text-zinc-100 capitalize">{name}</h3>
+						<div class="flex items-baseline gap-3 flex-wrap">
+							<h3 class="text-2xl font-bold text-zinc-100 capitalize">
+								{name}
+							</h3>
+							<p class="text-zinc-400">{date}</p>
+						</div>
 
 						<p class="text-zinc-400">{description}</p>
 
