@@ -37,7 +37,7 @@ const MobileNav: React.FC = () => {
 					<Link to="/blog" icon={IoNewspaper}>
 						Blog
 					</Link>
-					<Link to="/about" icon={IoPerson}>
+					<Link to="/#about" icon={IoPerson}>
 						About
 					</Link>
 					<Link to="/portfolio" icon={IoCodeSlash}>
