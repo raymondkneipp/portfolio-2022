@@ -12,7 +12,7 @@ const EmailGrabber: React.FC = () => {
 				<input
 					type="email"
 					id="email"
-					className="flex-1 bg-transparent placeholder:text-zinc-900/50 text-zinc-900 focus:outline-none p-3 block border-2 border-zinc-900/20 focus:border-zinc-900 rounded-lg sm:border-0"
+					className="flex-1 bg-transparent placeholder:text-zinc-900/50 text-zinc-900 focus:outline-none p-3 block border-2 border-zinc-900/20 focus:border-zinc-900 rounded-lg sm:border-0 max-w-none"
 					placeholder="Email Address"
 				/>
 				<input
