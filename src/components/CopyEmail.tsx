@@ -9,8 +9,12 @@ const CopyEmail: React.FC = () => {
 	const { CopyToClipboard } = pkg;
 
 	return (
-		<div className="rounded-lg border-2 border-cyan-500/20 flex p-2 focus-within:border-cyan-500 transition max-w-lg mx-auto">
-			<span className="flex-1 text-cyan-500 p-3">{text}</span>
+		<div
+			className={`rounded-lg border-2 flex p-2 transition max-w-lg mx-auto ${
+				copied ? 'border-cyan-500' : 'border-cyan-500/20'
+			}`}
+		>
+			<span className="flex-1 text-cyan-500 p-3 select-all">{text}</span>
 
 			<CopyToClipboard
 				text={text}
@@ -21,7 +25,10 @@ const CopyEmail: React.FC = () => {
 					}, 5000);
 				}}
 			>
-				<button className="font-bold p-3 hover:bg-zinc-800 transition rounded-lg cursor-pointer focus:outline-none text-cyan-500">
+				<button
+					disabled={copied}
+					className="font-bold p-3 hover:bg-zinc-800 transition rounded-lg cursor-pointer focus:outline-none text-cyan-500 disabled:bg-transparent disabled:cursor-not-allowed"
+				>
 					{copied ? <IoCheckmark size={24} /> : <IoCopy size={24} />}
 				</button>
 			</CopyToClipboard>
