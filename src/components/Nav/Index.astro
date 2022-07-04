@@ -1,23 +1,26 @@
 ---
+import Container from '@components/Container.astro';
 import Link from './Link/Index.astro';
 import MobileNav from './MobileNav/Index';
 ---
 
 <nav>
-	<div class='flex items-center justify-between py-10'>
-		<a
-			href='/'
-			class='focus:outline-none focus-visible:ring focus-visible:ring-cyan-500 inline-flex rounded-lg focus-visible:ring-offset-8 focus-visible:ring-offset-zinc-900'
-		>
-			<img src='/logo.svg' width='80px' alt='RK Web Design Logo' />
-		</a>
-		<div class='space-x-3 hidden sm:flex'>
-			<Link to='/'>Home</Link>
-			<Link to='/blog'>Blog</Link>
-			<Link to='/#about'>About</Link>
-			<Link to='/#portfolio'>Portfolio</Link>
-			<Link to='/contact'>Contact</Link>
+	<Container>
+		<div class='flex items-center justify-between py-10'>
+			<a
+				href='/'
+				class='focus:outline-none focus-visible:ring focus-visible:ring-cyan-500 inline-flex rounded-lg focus-visible:ring-offset-8 focus-visible:ring-offset-zinc-900'
+			>
+				<img src='/logo.svg' width='80px' alt='RK Web Design Logo' />
+			</a>
+			<div class='space-x-3 hidden sm:flex'>
+				<Link to='/'>Home</Link>
+				<Link to='/blog'>Blog</Link>
+				<Link to='/#about'>About</Link>
+				<Link to='/#portfolio'>Portfolio</Link>
+				<Link to='/contact'>Contact</Link>
+			</div>
+			<MobileNav client:visible />
 		</div>
-		<MobileNav client:visible />
-	</div>
+	</Container>
 </nav>

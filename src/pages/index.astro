@@ -5,6 +5,8 @@ import Hero from '@components/Hero.astro';
 import Container from '@components/Container.astro';
 import Intro from '@components/Intro.astro';
 import Portfolio from '@components/Portfolio.astro';
+import CTA from '@components/CTA.astro';
+import Contact from '@components/Contact.astro';
 ---
 
 <Layout title='Web Developer | Raymond Kneipp'>
@@ -12,5 +14,7 @@ import Portfolio from '@components/Portfolio.astro';
 		<Hero />
 		<Intro />
 		<Portfolio client:visible />
+		<CTA />
+		<Contact />
 	</main>
 </Layout>
