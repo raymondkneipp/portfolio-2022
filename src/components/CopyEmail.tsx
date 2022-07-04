@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { IoCheckmark, IoCopy } from 'react-icons/io5/index.js';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import pkg from 'react-copy-to-clipboard';
 
 const CopyEmail: React.FC = () => {
 	const [copied, setCopied] = useState(false);
 	const [text, setText] = useState('hello@raymondkneipp.com');
+
+	const { CopyToClipboard } = pkg;
 
 	return (
 		<div className="rounded-lg border-2 border-cyan-500/20 flex p-2 focus-within:border-cyan-500 transition max-w-lg mx-auto">
