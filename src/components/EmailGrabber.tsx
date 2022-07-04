@@ -1,5 +1,5 @@
 import React from 'react';
-import { IoArrowForward } from 'react-icons/io5';
+import { IoArrowForward } from 'react-icons/io5/index.js';
 
 const EmailGrabber: React.FC = () => {
 	return (
