@@ -10,11 +10,16 @@ const CopyEmail: React.FC = () => {
 
 	return (
 		<div
-			className={`rounded-lg border-2 flex p-2 transition max-w-lg mx-auto ${
+			className={`rounded-lg border-2 flex p-2 transition max-w-lg mx-auto focus-within:border-cyan-500 ${
 				copied ? 'border-cyan-500' : 'border-cyan-500/20'
 			}`}
 		>
-			<span className="flex-1 text-cyan-500 p-3 select-all">{text}</span>
+			<a
+				href={`mailto:${text}`}
+				className="text-cyan-500 p-3 select-all mr-auto"
+			>
+				{text}
+			</a>
 
 			<CopyToClipboard
 				text={text}
