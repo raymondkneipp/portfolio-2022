@@ -1,0 +1,43 @@
+---
+import { IoLogoGithub, IoLogoLinkedin, IoReader } from 'react-icons/io5';
+import Container from './Container.astro';
+---
+
+<footer>
+	<Container>
+		<div
+			class='flex items-center justify-between flex-col md:flex-row py-6 space-y-3 md:space-y-0'
+		>
+			<div class='flex items-center space-x-3'>
+				<img src='/logo.svg' width='80px' />
+				<div class='flex flex-col'>
+					<h5 class='font-bold text-zinc-100'>Raymond Kneipp</h5>
+					<h6 class='font-normal text-zinc-400'>Web Design</h6>
+				</div>
+			</div>
+			<div class='flex items-center gap-3 flex-wrap justify-center'>
+				<a
+					href='https://www.linkedin.com/in/raymondkneipp/'
+					class='flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg'
+				>
+					<IoLogoLinkedin size={24} />
+					<span class='ml-3'>LinkedIn</span>
+				</a>
+				<a
+					href='https://github.com/raymondkneipp'
+					class='flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg'
+				>
+					<IoLogoGithub size={24} />
+					<span class='ml-3'>GitHub</span>
+				</a>
+				<a
+					href='/'
+					class='flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg'
+				>
+					<IoReader size={24} />
+					<span class='ml-3'>Resume</span>
+				</a>
+			</div>
+		</div>
+	</Container>
+</footer>

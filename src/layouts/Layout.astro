@@ -1,6 +1,7 @@
 ---
 import Container from '@components/Container.astro';
 import CTA from '@components/CTA.astro';
+import Footer from '@components/Footer.astro';
 import Nav from '@components/Nav/Index.astro';
 
 export interface Props {
@@ -15,6 +16,8 @@ const { title } = Astro.props as Props;
 	<head>
 		<meta charset='UTF-8' />
 		<meta name='viewport' content='width=device-width' />
+		<meta name='theme-color' content='#05B6D3' />
+		<meta name='color-scheme' content='dark' />
 		<link rel='icon' type='image/x-icon' href='/favicon.ico' />
 		<title>{title}</title>
 	</head>
@@ -24,5 +27,6 @@ const { title } = Astro.props as Props;
 		</Container>
 		<slot></slot>
 		<CTA />
+		<Footer />
 	</body>
 </html>

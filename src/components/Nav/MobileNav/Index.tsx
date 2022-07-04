@@ -7,6 +7,7 @@ import {
 	IoLogoReact,
 	IoMail,
 	IoMenu,
+	IoNewspaper,
 	IoPerson,
 	IoReader,
 } from 'react-icons/io5/index.js';
@@ -31,7 +32,7 @@ const MobileNav: React.FC = () => {
 					<Link to="/" icon={IoHome}>
 						Home
 					</Link>
-					<Link to="/blog" icon={IoReader}>
+					<Link to="/blog" icon={IoNewspaper}>
 						Blog
 					</Link>
 					<Link to="/about" icon={IoPerson}>
