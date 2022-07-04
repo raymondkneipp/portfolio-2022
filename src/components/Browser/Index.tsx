@@ -43,7 +43,7 @@ const Browser: React.FC = () => {
 					title="Stand Out Among Cookie Cutter Websites"
 					color="cyan"
 				>
-					<p>
+					<p className="indent-6">
 						Your website needs to stand out amidst your vast competition.
 						Something eye-catching, easy to use, and optimized for conversion.
 						Your website is an extension of your business, and there is no
@@ -55,7 +55,7 @@ const Browser: React.FC = () => {
 					title="Fast Load Times Leads to More Sales"
 					color="amber"
 				>
-					<p>
+					<p className="indent-6">
 						Load time is when you make your first impression. If your website is
 						slow, you and your business look unprofessional. 40% of people will
 						abandon a site if it takes longer than 3 seconds.
@@ -66,7 +66,7 @@ const Browser: React.FC = () => {
 					title="Rank Higher Than Your Competitors"
 					color="emerald"
 				>
-					<p>
+					<p className="indent-6">
 						Organic search is most often the primary source of a website's
 						traffic. Every time you are ranked lower than a competitor, you are
 						losing money. Good search engine optimization is crucial to being
