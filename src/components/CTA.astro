@@ -1,19 +1,24 @@
 ---
 import Container from './Container.astro';
 import SecondaryButton from './SecondaryButton.astro';
+import EmailGrabber from './EmailGrabber';
 ---
 
 <div class='bg-cyan-500 py-24'>
 	<Container>
-		<div class='flex flex-col items-center space-y-3 max-w-lg mx-auto'>
-			<h2 class='text-4xl font-bold text-center text-zinc-900'>
-				Boost your online presence. Get a free quote today.
-			</h2>
-			<p class='text-lg text-center text-zinc-800'>
-				Let me build you an amazing website so you can show off your business to
-				the world wide web.
-			</p>
-			<SecondaryButton to='/quote'>Request a Quote</SecondaryButton>
+		<div
+			class='grid md:grid-cols-2 max-w-screen-lg w-full mx-auto items-end gap-6 lg:gap-12'
+		>
+			<div class='flex flex-col space-y-3'>
+				<h2 class='text-4xl font-bold text-zinc-900'>
+					Boost your online presence. Get a free quote today.
+				</h2>
+				<p class='text-lg text-zinc-800'>
+					Let me build you an amazing website so you can show off your business
+					to the world wide web.
+				</p>
+			</div>
+			<EmailGrabber client:visible />
 		</div>
 	</Container>
 </div>
