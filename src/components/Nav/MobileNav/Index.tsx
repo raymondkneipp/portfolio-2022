@@ -4,6 +4,8 @@ import {
 	IoChatbox,
 	IoCodeSlash,
 	IoHome,
+	IoLogoGithub,
+	IoLogoLinkedin,
 	IoLogoReact,
 	IoMail,
 	IoMenu,
@@ -43,6 +45,19 @@ const MobileNav: React.FC = () => {
 					</Link>
 					<Link to="/contact" icon={IoMail}>
 						Contact
+					</Link>
+					<div className="bg-zinc-700 h-px my-3" />
+					<Link
+						to="https://www.linkedin.com/in/raymondkneipp/"
+						icon={IoLogoLinkedin}
+					>
+						LinkedIn
+					</Link>
+					<Link to="https://github.com/raymondkneipp" icon={IoLogoGithub}>
+						GitHub
+					</Link>
+					<Link to="/" icon={IoReader}>
+						Resume
 					</Link>
 				</Popover.Panel>
 			</Transition>
