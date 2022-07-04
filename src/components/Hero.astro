@@ -1,26 +1,29 @@
 ---
 import Browser from './Browser/Index';
+import Container from './Container.astro';
 import PrimaryButton from './PrimaryButton.astro';
 ---
 
-<section
-	class='grid md:grid-cols-2 items-center py-12 sm:py-24 md:py-36 gap-12'
->
-	<div class='space-y-6'>
-		<h1 class='text-lg text-zinc-400 flex flex-col leading-loose'>
-			Hi, my name is <span class='text-zinc-100 text-6xl font-bold'
-				>Raymond Kneipp
-			</span>
-		</h1>
-		<h2 class='text-zinc-400 text-2xl leading-snug'>
-			I create <span class='text-cyan-500 font-bold'>unique, tailored,</span> websites
-			that are
-			<span class='text-amber-500 font-bold'>quick, performant</span> and <span
-				class='text-emerald-500 font-bold'
-				>search engine optimized.
-			</span>
-		</h2>
-		<PrimaryButton to='/quote'>Request a Quote</PrimaryButton>
-	</div>
-	<Browser client:load />
-</section>
+<Container>
+	<section
+		class='grid md:grid-cols-2 items-center py-12 sm:py-24 md:py-36 gap-12'
+	>
+		<div class='space-y-6'>
+			<h1 class='text-lg text-zinc-400 flex flex-col leading-loose'>
+				Hi, my name is <span class='text-zinc-100 text-6xl font-bold'
+					>Raymond Kneipp
+				</span>
+			</h1>
+			<h2 class='text-zinc-400 text-2xl leading-snug'>
+				I create <span class='text-cyan-500 font-bold'>unique, tailored,</span> websites
+				that are
+				<span class='text-amber-500 font-bold'>quick, performant</span> and <span
+					class='text-emerald-500 font-bold'
+					>search engine optimized.
+				</span>
+			</h2>
+			<PrimaryButton to='/quote'>Request a Quote</PrimaryButton>
+		</div>
+		<Browser client:load />
+	</section>
+</Container>
