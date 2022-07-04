@@ -46,7 +46,7 @@ const MobileNav: React.FC = () => {
 					<Link to="/#portfolio" icon={IoCodeSlash}>
 						Portfolio
 					</Link>
-					<Link to="/contact" icon={IoMail}>
+					<Link to="/#contact" icon={IoMail}>
 						Contact
 					</Link>
 					<div className="bg-zinc-700 h-px my-3" />
