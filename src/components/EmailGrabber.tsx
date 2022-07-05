@@ -5,7 +5,9 @@ const EmailGrabber: React.FC = () => {
 	return (
 		<form className="space-y-3">
 			<label htmlFor="coupon" className="text-zinc-800 flex items-center">
-				<span className="mr-3">Get 25% off your next website</span>
+				<span className="mr-3">
+					Get <strong>25%</strong> off your next website
+				</span>
 				<IoArrowForward />
 			</label>
 			<div className="rounded-lg sm:border-2 border-zinc-900/20 flex sm:p-2 focus-within:border-zinc-900 transition flex-col sm:flex-row space-y-3 sm:space-y-0">
