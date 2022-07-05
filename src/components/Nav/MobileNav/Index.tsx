@@ -17,7 +17,7 @@ import Link from './Link/Index';
 
 const MobileNav: React.FC = () => {
 	return (
-		<Popover className="relative sm:hidden">
+		<Popover className="relative sm:hidden z-40">
 			<Popover.Button
 				className="text-zinc-100 p-3 hover:bg-zinc-800 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500"
 				aria-label="menu"
