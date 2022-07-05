@@ -13,7 +13,7 @@ const posts = await Astro.glob('./posts/*.md');
 
 				<div class='grid md:grid-cols-2 lg:grid-cols-3 gap-12'>
 					{posts.map((post) => (
-						<a href={post.url} class="bg-zinc-800 rounded-2xl overflow-hidden">
+						<a href={post.url} class="bg-zinc-800 rounded-2xl overflow-hidden focus:outline-none focus-visible:ring focus-visible:ring-cyan-500">
 							<article class="flex flex-col h-full">
 								<img
 									src={post.frontmatter.image}
