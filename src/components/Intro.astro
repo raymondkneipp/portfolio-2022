@@ -5,17 +5,17 @@ import {
 	IoLogoLinkedin,
 	IoReader,
 } from 'react-icons/io5/index.js';
-import { Img } from 'astro-imagetools/components';
 ---
 
 <Container>
 	<section class='py-24 max-w-screen-md mx-auto' id='about'>
 		<div class='flex items-center flex-col space-y-6 md:flex-row'>
-
-			<div class="w-full max-w-xs md:basis-52 md:grow-0 md:shrink-0 flex items-center">
-				<Img src="/me.png" alt="Raymond Kneipp portrait" layout="fullWidth" placeholder="none"/>
-			</div>
-
+			<img
+				src='/me.png'
+				width='200px'
+				height='200px'
+				alt='Raymond Kneipp Portrait'
+			/>
 			<div class='flex flex-col md:items-start'>
 				<p class='text-zinc-300 text-lg bg-zinc-800 p-6 sm:p-12 rounded-2xl'>
 					Hello, I'm Raymond Kneipp, a Marine Corps veteran and a freelance
