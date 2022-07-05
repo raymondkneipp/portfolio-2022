@@ -66,7 +66,7 @@ const MobileNav: React.FC = () => {
 							<Link to="https://github.com/raymondkneipp" icon={IoLogoGithub}>
 								GitHub
 							</Link>
-							<Link to="/" icon={IoReader}>
+							<Link to="/resume.pdf" icon={IoReader}>
 								Resume
 							</Link>
 						</Popover.Panel>
