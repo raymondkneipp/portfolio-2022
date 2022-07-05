@@ -13,6 +13,7 @@
     "@astrojs/tailwind": "^0.2.2",
     "@astrojs/vercel": "^0.2.4",
     "@headlessui/react": "^1.6.5",
+    "@tailwindcss/typography": "^0.5.2",
     "astro": "^1.0.0-beta.63",
     "prettier-plugin-astro": "^0.1.1",
     "react": "^18.2.0",

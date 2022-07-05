@@ -1,0 +1,43 @@
+---
+import Container from '@components/Container.astro';
+import Layout from '@layouts/Layout.astro';
+
+const { content } = Astro.props;
+---
+
+<Layout title={content.title}>
+	<Container>
+		<article class='space-y-6 max-w-prose mx-auto py-24'>
+			<img
+				src={content.image}
+				width="100%"
+				height="500px"
+				alt={content.title}
+				class="rounded-2xl"
+			/>
+			<h1 class='text-zinc-100 text-5xl font-bold'>{content.title}</h1>
+
+			<div class='flex items-center space-x-3'>
+				<img
+					src={content.avatar}
+					width='50px'
+					height='50px'
+					alt={`${content.author} portrait`}
+					class='bg-zinc-100 rounded-full'
+				/>
+				<div class='space-y-1'>
+					<h2 class='font-bold text-zinc-100'>
+						Written by {content.author}
+					</h2>
+					<p class='text-zinc-400'>
+						Published on {content.date}
+					</p>
+				</div>
+			</div>
+			<div class='h-px bg-zinc-800'></div>
+			<div class='prose prose-invert'>
+				<slot></slot>
+			</div>
+		</article>
+	</Container>
+</Layout>
