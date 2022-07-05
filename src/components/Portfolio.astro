@@ -1,4 +1,5 @@
 ---
+import { Img } from 'astro-imagetools/components';
 import {
 	IoEye,
 	IoGitBranch,
@@ -74,11 +75,9 @@ const projects = data.data.user.pinnedItems.edges;
 
 				return (
 					<div class="space-y-3">
-						<img
-							src={openGraphImageUrl}
-							alt={`screenshot of ${name}`}
-							class="rounded-2xl"
-						/>
+						<div class="h-64 md:h-80 sm:h-96 rounded-2xl overflow-hidden">
+							<Img src={openGraphImageUrl} alt={`screenshot of ${name}`} layout="fill" />
+						</div>
 						<div class="flex items-baseline gap-3 flex-wrap">
 							<h3 class="text-2xl font-bold text-zinc-100 capitalize">
 								{name}
