@@ -1,8 +1,15 @@
 import React from 'react';
 
 const ContactForm: React.FC = () => {
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log('hello');
+	};
 	return (
-		<form className="space-y-3 max-w-lg flex flex-col mx-auto">
+		<form
+			className="space-y-3 max-w-lg flex flex-col mx-auto"
+			onSubmit={handleSubmit}
+		>
 			<label htmlFor="email" className="text-cyan-500">
 				Email
 			</label>
