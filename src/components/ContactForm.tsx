@@ -40,6 +40,7 @@ const ContactForm: React.FC = () => {
 			</label>
 			<input
 				type="email"
+				required={true}
 				id="email"
 				name="email"
 				disabled={status !== 'idle'}
@@ -51,6 +52,8 @@ const ContactForm: React.FC = () => {
 			</label>
 			<textarea
 				id="message"
+				required={true}
+				minLength={10}
 				name="message"
 				disabled={status !== 'idle'}
 				className="flex-1 bg-transparent placeholder:text-cyan-500/50 text-cyan-500 focus:outline-none p-3 block border-2 border-cyan-500/20 focus:border-cyan-500 rounded-lg max-w-none resize-none disabled:cursor-not-allowed"
