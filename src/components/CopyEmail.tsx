@@ -16,7 +16,7 @@ const CopyEmail: React.FC = () => {
 		>
 			<a
 				href={`mailto:${text}`}
-				className="text-cyan-500 p-3 select-all mr-auto"
+				className="text-cyan-500 p-3 select-all mr-auto focus:outline-none focus-visible:ring focus-visible:ring-cyan-500 rounded-lg"
 			>
 				{text}
 			</a>
@@ -32,7 +32,7 @@ const CopyEmail: React.FC = () => {
 			>
 				<button
 					disabled={copied}
-					className="font-bold p-3 hover:bg-zinc-800 transition rounded-lg cursor-pointer focus:outline-none text-cyan-500 disabled:bg-transparent disabled:cursor-not-allowed"
+					className="font-bold p-3 hover:bg-zinc-800 transition rounded-lg cursor-pointer focus:outline-none text-cyan-500 disabled:bg-transparent disabled:cursor-not-allowed focus-visible:ring focus-visible:ring-cyan-500"
 				>
 					{copied ? <IoCheckmark size={24} /> : <IoCopy size={24} />}
 				</button>
