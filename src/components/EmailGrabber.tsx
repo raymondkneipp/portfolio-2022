@@ -1,9 +1,37 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from 'emailjs-com';
 import { IoArrowForward } from 'react-icons/io5/index.js';
+import { IoAlertCircle, IoCheckmark } from 'react-icons/io5/index.js';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai/index.js';
 
 const EmailGrabber: React.FC = () => {
+	const form = useRef();
+	const [status, setStatus] = useState('idle');
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+
+		setStatus('loading');
+
+		emailjs
+			.sendForm(
+				'service_utpk41s',
+				'template_uxsrn5p',
+				form.current,
+				'EkS05CKAu86EamUZd'
+			)
+			.then((res) => {
+				form.current.reset();
+
+				setStatus('success');
+			})
+			.catch((error) => {
+				setStatus('error');
+			});
+	};
+
 	return (
-		<form className="space-y-3">
+		<form className="space-y-3" ref={form} onSubmit={handleSubmit}>
 			<label htmlFor="coupon" className="text-zinc-800 flex items-center">
 				<span className="mr-3">
 					Get <strong>25%</strong> off your next website
@@ -14,14 +42,28 @@ const EmailGrabber: React.FC = () => {
 				<input
 					type="email"
 					id="coupon"
-					className="flex-1 bg-transparent placeholder:text-zinc-900/50 text-zinc-900 focus:outline-none p-3 block border-2 border-zinc-900/20 focus:border-zinc-900 rounded-lg sm:border-0 max-w-none"
+					name="email"
+					disabled={status !== 'idle'}
+					required={true}
+					className="flex-1 bg-transparent placeholder:text-zinc-900/50 text-zinc-900 focus:outline-none p-3 block border-2 border-zinc-900/20 focus:border-zinc-900 rounded-lg sm:border-0 max-w-none disabled:cursor-not-allowed"
 					placeholder="Email Address"
 				/>
-				<input
+				<button
 					type="submit"
-					value="Get Coupon"
-					className="font-bold text-cyan-500 bg-zinc-900 px-6 py-3 hover:bg-zinc-800 transition focus-visible:ring focus-visible:ring-zinc-900 focus-visible:ring-offset-2 focus-visible:ring-offset-cyan-500 rounded-lg cursor-pointer focus:outline-none"
-				/>
+					disabled={status !== 'idle'}
+					className="font-bold text-cyan-500 bg-zinc-900 px-6 py-3 hover:bg-zinc-800 transition focus-visible:ring focus-visible:ring-zinc-900 focus-visible:ring-offset-2 focus-visible:ring-offset-cyan-500 rounded-lg cursor-pointer focus:outline-none disabled:bg-zinc-900/75 disabled:cursor-not-allowed basis-36 flex items-center justify-center"
+				>
+					{status === 'loading' && (
+						<>
+							<span className="animate-spin">
+								<AiOutlineLoading3Quarters size={24} />
+							</span>
+						</>
+					)}
+					{status === 'idle' && 'Get Coupon'}
+					{status === 'success' && <IoCheckmark size={24} />}
+					{status === 'error' && <IoAlertCircle size={24} />}
+				</button>
 			</div>
 		</form>
 	);

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
-import { IoAlertCircle, IoCheckmark, IoSend } from 'react-icons/io5/index.js';
+import { IoAlertCircle, IoCheckmark } from 'react-icons/io5/index.js';
 import { AiOutlineLoading3Quarters } from 'react-icons/ai/index.js';
 
 const ContactForm: React.FC = () => {
@@ -64,34 +64,16 @@ const ContactForm: React.FC = () => {
 				type="submit"
 				disabled={status !== 'idle'}
 				value="Send Message"
-				className="font-bold text-zinc-900 bg-cyan-500 px-6 py-3 hover:bg-cyan-400 transition rounded-lg cursor-pointer focus:outline-none focus-visible:ring focus-visible:ring-cyan-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 flex items-center justify-center disabled:bg-cyan-600 disabled:cursor-not-allowed"
+				className="font-bold text-zinc-900 bg-cyan-500 px-6 py-3 hover:bg-cyan-400 transition rounded-lg cursor-pointer focus:outline-none focus-visible:ring focus-visible:ring-cyan-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 flex items-center justify-center disabled:bg-cyan-500/75 disabled:cursor-not-allowed"
 			>
 				{status === 'loading' && (
-					<>
-						<span className="animate-spin">
-							<AiOutlineLoading3Quarters size={24} />
-						</span>
-						<span className="ml-3">Loading</span>
-					</>
+					<span className="animate-spin">
+						<AiOutlineLoading3Quarters size={24} />
+					</span>
 				)}
-				{status === 'idle' && (
-					<>
-						<IoSend size={24} />
-						<span className="ml-3">Send</span>
-					</>
-				)}
-				{status === 'success' && (
-					<>
-						<IoCheckmark size={24} />
-						<span className="ml-3">Message Sent</span>
-					</>
-				)}
-				{status === 'error' && (
-					<>
-						<IoAlertCircle size={24} />
-						<span className="ml-3">Try Again</span>
-					</>
-				)}
+				{status === 'idle' && 'Send'}
+				{status === 'success' && <IoCheckmark size={24} />}
+				{status === 'error' && <IoAlertCircle size={24} />}
 			</button>
 		</form>
 	);
