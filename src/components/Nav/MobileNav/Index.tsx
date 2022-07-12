@@ -41,7 +41,7 @@ const MobileNav: React.FC = () => {
 						leaveTo="transform scale-95 opacity-0"
 					>
 						<Popover.Panel className="absolute z-40 right-0 bg-zinc-800 p-3 flex flex-col rounded-lg w-56 shadow-lg mt-3">
-							<Link to="/" icon={IoHome}>
+							<Link to="/#" icon={IoHome}>
 								Home
 							</Link>
 							<Link to="/blog" icon={IoNewspaper}>
