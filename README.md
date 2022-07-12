@@ -74,6 +74,7 @@
 - [React Icons](https://react-icons.github.io/react-icons)
 - [EmailJS](https://www.emailjs.com/)
 - [react-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard)
+- [Headless UI](https://headlessui.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
