@@ -13,13 +13,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/raymondkneipp/portfolio">
-    <img src="public/img/logo-outline.svg" alt="Logo" width="80" height="80">
+    <img src="public/logo-outline.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Portfolio</h3>
 
   <p align="center">
-  E-commerce website made for a local vacuum and sewing machine repair business.
+		My portfolio website showcasing my pinned repositories.
     <br />
     <a href="https://github.com/raymondkneipp/portfolio"><strong>Explore the docs »</strong></a>
     <br />
@@ -62,24 +62,18 @@
 
 ## About The Project
 
-[![Al's Sweeper & Sewing Center Screen Shot][product-screenshot]](https://portfolio.vercel.app/)
+[![Portfolio Screen Shot][product-screenshot]](https://portfolio.vercel.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
-- [Next.js](https://nextjs.org/)
+- [Astro](https://astro.build/)
 - [React.js](https://reactjs.org/)
 - [Tailwindcss](https://tailwindcss.com/)
-- [Commerce.js](https://commercejs.com/)
-- [Redux Toolkit](https://redux-toolkit.js.org/)
-- [Next SEO](https://github.com/garmeeh/next-seo)
-- [React Fast Marquee](https://www.react-fast-marquee.com/)
-- [React Hook Form](https://react-hook-form.com/)
-- [React Hot Toast](https://react-hot-toast.com/)
 - [React Icons](https://react-icons.github.io/react-icons)
-- [Variant Classnames](https://github.com/mattvalleycodes/variant-classnames)
-- [SendGrid](https://sendgrid.com/)
+- [EmailJS](https://www.emailjs.com/)
+- [react-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -99,26 +93,25 @@ To get a local copy up and running follow these simple steps.
 
 ### Installation
 
-1. Get a free Commerce.js API Key at [https://commercejs.com/](https://commercejs.com/)
-2. Get a free SendGrid API Key at [https://sendgrid.com/](https://sendgrid.com/)
-3. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/raymondkneipp/portfolio.git
    ```
-4. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-5. Enter your API keys in `.env.local`
-   ```
-   NEXT_PUBLIC_CHEC_PUBLIC_API_KEY="your Commerce.js API key"
-   SENDGRID_API_KEY="your SendGrid API key"
-   EMAIL="email to send form submissions to"
-   ```
-6. Start local server
-   ```sh
-   npm run dev
-   ```
+3. Get a free EmailJS API Key at [https://www.emailjs.com/](https://www.emailjs.com/)
+4. Add an email service [https://dashboard.emailjs.com/admin](https://dashboard.emailjs.com/admin)
+5. Set `PUBLIC_EMAILJS_SERVICE` to given Service ID in `.env`
+6. Set `PUBLIC_EMAILJS_PUBLIC_KEY` to public key [https://dashboard.emailjs.com/admin/account](https://dashboard.emailjs.com/admin/account)
+7. Create two email templates. One for the contact form and the other for a coupon.
+8. Set the template ID for each in `.env`
+9. Create a GitHub Personal Access Token with access to `repos` [https://github.com/settings/tokens](https://github.com/settings/tokens)
+10. Start local server
+    ```sh
+    npm run dev
+    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -136,10 +129,7 @@ Feel free to change the information presented on this webpage and create your ow
 
 ## Roadmap
 
-- [x] Add SendGrid
-  - [x] Contact form functionality
-  - [x] Honey pot filter
-- [ ] Custom checkout
+- [ ] Marketing Page
 
 See the [open issues](https://github.com/raymondkneipp/portfolio/issues) for a full list of proposed features (and known issues).
 
@@ -176,7 +166,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Raymond Kneipp - [@rfkquery](https://twitter.com/rfkquery) - hello@raymondkneipp.com
 
-Project Link: [https://github.com/raymondkneipp/portfolio](https://github.com/raymondkneipp/alssweeper)
+Project Link: [https://github.com/raymondkneipp/portfolio](https://github.com/raymondkneipp/portfolio)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -184,8 +174,7 @@ Project Link: [https://github.com/raymondkneipp/portfolio](https://github.com/ra
 
 ## Acknowledgments
 
-- [React Architecture](https://www.taniarascia.com/react-architecture-directory-structure/)
-- [Best README Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
+- [Astro](https://astro.build/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -204,4 +193,4 @@ Project Link: [https://github.com/raymondkneipp/portfolio](https://github.com/ra
 [license-url]: https://github.com/raymondkneipp/portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/raymondkneipp
-[product-screenshot]: public/img/screenshot.png
+[product-screenshot]: public/screenshot.png
