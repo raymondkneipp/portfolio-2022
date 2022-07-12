@@ -51,7 +51,7 @@ const EmailGrabber: React.FC = () => {
 				<button
 					type="submit"
 					disabled={status !== 'idle'}
-					className="font-bold text-cyan-500 bg-zinc-900 px-6 py-3 hover:bg-zinc-800 transition focus-visible:ring focus-visible:ring-zinc-900 focus-visible:ring-offset-2 focus-visible:ring-offset-cyan-500 rounded-lg cursor-pointer focus:outline-none disabled:bg-zinc-900/75 disabled:cursor-not-allowed basis-36 flex items-center justify-center"
+					className="font-bold text-cyan-500 bg-zinc-900 px-6 py-3 hover:bg-zinc-800 transition focus-visible:ring focus-visible:ring-zinc-900 focus-visible:ring-offset-2 focus-visible:ring-offset-cyan-500 rounded-lg cursor-pointer focus:outline-none disabled:bg-zinc-900/75 disabled:cursor-not-allowed sm:basis-36 flex items-center justify-center"
 				>
 					{status === 'loading' && (
 						<>
