@@ -14,10 +14,10 @@ const ContactForm: React.FC = () => {
 
 		emailjs
 			.sendForm(
-				'service_utpk41s',
-				'template_fj6l48l',
+				import.meta.env.PUBLIC_EMAILJS_SERVICE,
+				import.meta.env.PUBLIC_CONTACT_TEMPLATE,
 				form.current,
-				'EkS05CKAu86EamUZd'
+				import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY
 			)
 			.then((res) => {
 				form.current.reset();
