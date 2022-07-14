@@ -130,7 +130,7 @@ Feel free to change the information presented on this webpage and create your ow
 
 ## Roadmap
 
-- [ ] Marketing Page
+- [ ] Marketing Page -> https://primer.tailwindui.com/
 - [ ] Blog SEO config
 - [ ] FAQ
 - [ ] Testimonials
