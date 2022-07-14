@@ -101,9 +101,9 @@ Mastering Search engine optimization takes years of practice and experience. SEO
 
 #### Tips to Improve SEO
 
-Publish valuable, relevant content that speaks to your audience.
-Provide meta data to your pages
-Make your site accessible
+1. Publish valuable, relevant content that speaks to your audience.
+2. Provide meta data to your pages.
+3. Make your site accessible.
 
 #### Blogging
 
