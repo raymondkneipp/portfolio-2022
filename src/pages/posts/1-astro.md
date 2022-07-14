@@ -5,7 +5,7 @@ avatar: /me.png
 date: 07-04-2022
 title: Welcome to my New Blog!
 description: What is Astro, and why did I create a website with it? No more JavaScript?! In this post, I talk about how I built my new site with Astro and when you should use it.
-image: 1.png
+image: /1.png
 ---
 
 Welcome to my new blog made with [Astro](https://astro.build). This blog is where I will teach, rant, or share anything related to web development or other topics I see fit. The goal of this blog is to document my programming journey and teach others in the process.
