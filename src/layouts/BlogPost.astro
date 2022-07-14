@@ -30,7 +30,7 @@ const { content } = Astro.props;
 						Written by {content.author}
 					</h2>
 					<p class='text-zinc-400'>
-						Published on {content.date}
+						Published on {new Date(content.date).toDateString()}
 					</p>
 				</div>
 			</div>

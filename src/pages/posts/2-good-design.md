@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 author: Raymond Kneipp
 avatar: /me.png
-date: July 14th 2022
+date: 07-14-2022
 title: What Makes A Good Website?
 description: How do you know if your website sucks? What constitutes a great website? Here are five salient characteristics that, if utilized correctly, will drastically enhance your company's website.
 image: /2.jpg

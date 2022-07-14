@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 author: Raymond Kneipp
 avatar: /me.png
-date: July 4th 2022
+date: 07-04-2022
 title: Welcome to my New Blog!
 description: What is Astro, and why did I create a website with it? No more JavaScript?! In this post, I talk about how I built my new site with Astro and when you should use it.
 image: /1.png

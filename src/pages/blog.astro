@@ -3,6 +3,7 @@ import Layout from '@layouts/Layout.astro';
 import Container from '@components/Container.astro';
 
 const posts = await Astro.glob('./posts/*.md');
+posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 ---
 
 <Layout title='Blog | Raymond Kneipp'>
@@ -39,7 +40,7 @@ const posts = await Astro.glob('./posts/*.md');
 										<h2 class="font-bold text-zinc-100">
 											{post.frontmatter.author}
 										</h2>
-										<p class="text-zinc-400">{post.frontmatter.date}</p>
+										<p class="text-zinc-400">{new Date(post.frontmatter.date).toDateString()}</p>
 									</div>
 								</div>
 									</div>
