@@ -6,7 +6,7 @@ const posts = await Astro.glob('./posts/*.md');
 posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 ---
 
-<Layout title='Blog | Raymond Kneipp'>
+<Layout title='Blog'>
 	<main>
 		<Container>
 			<section class='space-y-6 py-24'>
