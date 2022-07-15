@@ -3,7 +3,7 @@ layout: ../../layouts/BlogPost.astro
 author: Raymond Kneipp
 avatar: /me.png
 date: 07-04-2022
-title: Welcome to my New Blog!
+title: Welcome to my New Astro Blog!
 description: What is Astro, and why did I create a website with it? No more JavaScript?! In this post, I talk about how I built my new site with Astro and when you should use it.
 image: /1.png
 ---
@@ -14,7 +14,7 @@ Welcome to my new blog made with [Astro](https://astro.build). This blog is wher
 
 ```astro
 ---
-const name = "Astro"
+const name = 'Astro';
 ---
 
 <h1>Hello {name}</h1>
@@ -89,11 +89,13 @@ Let's delete everything in `src/pages/index.astro` and replace it with the follo
 
 ```astro
 ---
-const name = "ASTRO"
+const name = 'ASTRO';
 ---
 
-<div class="bg-blue-800 min-h-screen flex flex-col items-center justify-center">
-	<h1 class="text-fuchsia-300 font-black text-9xl text-center">{name} IN THE OCEAN</h1>
+<div class='bg-blue-800 min-h-screen flex flex-col items-center justify-center'>
+	<h1 class='text-fuchsia-300 font-black text-9xl text-center'>
+		{name} IN THE OCEAN
+	</h1>
 </div>
 ```
 
@@ -156,12 +158,14 @@ Now let's add the new component to our `index.astro` page.
 
 ```astro
 ---
-import Button from "../components/Button";
-const name = "ASTRO"
+import Button from '../components/Button';
+const name = 'ASTRO';
 ---
 
-<div class="bg-blue-800 min-h-screen flex flex-col items-center justify-center">
-	<h1 class="text-fuchsia-300 font-black text-9xl text-center">{name} IN THE OCEAN</h1>
+<div class='bg-blue-800 min-h-screen flex flex-col items-center justify-center'>
+	<h1 class='text-fuchsia-300 font-black text-9xl text-center'>
+		{name} IN THE OCEAN
+	</h1>
 
 	<Button>Click Me</Button>
 </div>
