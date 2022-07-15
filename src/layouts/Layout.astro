@@ -1,7 +1,7 @@
 ---
 import Footer from '@components/Footer.astro';
 import Nav from '@components/Nav/Index.astro';
-import {SEO} from "astro-seo";
+import { SEO } from 'astro-seo';
 
 export interface Props {
 	title?: string;
@@ -11,12 +11,15 @@ export interface Props {
 
 let { title, description, image } = Astro.props as Props;
 
-title = title || "Custom Affordable Web Design";
-title += " | Raymond Kneipp"
-description = description || "I create unique, tailored, websites that are quick, performant and search engine optimized.";
-let alt = image ? title : "RK Web Design Logo"
-image = image ? "https://raymondkneipp.com" + image : "https://raymondkneipp.com/websites.png"
-
+title = title || 'Custom Affordable Web Design';
+title += ' | Raymond Kneipp';
+description =
+	description ||
+	'I create unique, tailored, websites that are quick, performant and search engine optimized.';
+let alt = image ? title : 'RK Web Design Logo';
+image = image
+	? 'https://raymondkneipp.com' + image
+	: 'https://raymondkneipp.com/websites.png';
 ---
 
 <!DOCTYPE html>
@@ -30,19 +33,22 @@ image = image ? "https://raymondkneipp.com" + image : "https://raymondkneipp.com
 		<link rel='icon' type='image/png' href='/favicon.png' />
 
 		<SEO
-      title={title}
-      description={description}
+			title={title}
+			description={description}
 			openGraph={{
 				basic: {
 					title,
-					type: "website",
-					image
+					type: 'website',
+					image,
 				},
 				image: {
-					alt
-				}
+					alt,
+				},
+				twitter: {
+					card: 'summary_large_image',
+				},
 			}}
-			 />
+		/>
 	</head>
 	<body class='bg-zinc-900'>
 		<Nav />
