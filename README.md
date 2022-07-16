@@ -135,6 +135,7 @@ Feel free to change the information presented on this webpage and create your ow
 - [x] Blog SEO config
 - [ ] FAQ
 - [ ] Testimonials
+- [ ] About page -> https://www.namchee.dev/about/
 
 ## Blog Post Ideas
 
