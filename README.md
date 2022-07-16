@@ -136,6 +136,7 @@ Feel free to change the information presented on this webpage and create your ow
 - [ ] FAQ
 - [ ] Testimonials
 - [ ] About page -> https://www.namchee.dev/about/
+- [ ] Preview and Source buttons should open in new tabs
 
 ## Blog Post Ideas
 
