@@ -1,17 +1,17 @@
 ---
-import Layout from '@layouts/Layout.astro';
+import Contact from '@components/Contact.astro';
+import CTA from '@components/CTA.astro';
 import Hero from '@components/Hero.astro';
 import Intro from '@components/Intro.astro';
 import Portfolio from '@components/Portfolio.astro';
-import CTA from '@components/CTA.astro';
-import Contact from '@components/Contact.astro';
+import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout>
 	<main>
 		<Hero />
 		<Intro />
-		<Portfolio client:visible />
+		<Portfolio />
 		<CTA />
 		<Contact />
 	</main>
