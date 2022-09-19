@@ -1,20 +1,19 @@
-import React from 'react';
-import { Popover, Transition } from '@headlessui/react';
 import {
-	IoChatbox,
 	IoClose,
 	IoCodeSlash,
 	IoHome,
 	IoLogoGithub,
 	IoLogoLinkedin,
-	IoLogoReact,
 	IoMail,
 	IoMenu,
 	IoNewspaper,
 	IoPerson,
 	IoReader,
 } from 'react-icons/io5/index.js';
+import { Popover, Transition } from '@headlessui/react';
+
 import Link from './Link/Index';
+import React from 'react';
 
 const MobileNav: React.FC = () => {
 	return (

@@ -6,19 +6,19 @@ import MobileNav from './MobileNav/Index';
 
 <nav class="sticky top-0 bg-zinc-900 border-b border-zinc-800 z-50">
 	<Container>
-		<div class='flex items-center justify-between py-6'>
+		<div class="flex items-center justify-between py-6">
 			<a
-				href='/'
-				class='focus:outline-none focus-visible:ring focus-visible:ring-cyan-500 inline-flex rounded-lg focus-visible:ring-offset-8 focus-visible:ring-offset-zinc-900'
+				href="/"
+				class="focus:outline-none focus-visible:ring focus-visible:ring-cyan-500 inline-flex rounded-lg focus-visible:ring-offset-8 focus-visible:ring-offset-zinc-900"
 			>
-				<img src='/logo.svg' width='80px' alt='RK Web Design Logo' />
+				<img src="/logo.svg" width="80px" alt="RK Web Design Logo" />
 			</a>
-			<div class='space-x-3 hidden sm:flex'>
-				<Link to='/#'>Home</Link>
-				<Link to='/blog'>Blog</Link>
-				<Link to='/#about'>About</Link>
-				<Link to='/#portfolio'>Portfolio</Link>
-				<Link to='/#contact'>Contact</Link>
+			<div class="space-x-3 hidden sm:flex">
+				<Link to="/#">Home</Link>
+				<Link to="/blog">Blog</Link>
+				<Link to="/#about">About</Link>
+				<Link to="/#portfolio">Portfolio</Link>
+				<Link to="/#contact">Contact</Link>
 			</div>
 			<MobileNav client:load />
 		</div>
