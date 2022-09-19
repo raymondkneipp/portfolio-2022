@@ -1,10 +1,10 @@
 import {
-	HiCode,
+	HiCollection,
 	HiDocumentText,
 	HiHome,
 	HiMail,
 	HiMenu,
-	HiNewspaper,
+	HiPencil,
 	HiUser,
 	HiX,
 } from 'react-icons/hi/index.js';
@@ -42,14 +42,14 @@ const MobileNav: React.FC = () => {
 							<Link to="/#" icon={HiHome}>
 								Home
 							</Link>
-							<Link to="/blog" icon={HiNewspaper}>
+							<Link to="/blog" icon={HiPencil}>
 								Blog
 							</Link>
 							<Link to="/#about" icon={HiUser}>
 								About
 							</Link>
-							<Link to="/#portfolio" icon={HiCode}>
-								Portfolio
+							<Link to="/#portfolio" icon={HiCollection}>
+								My Work
 							</Link>
 							<Link to="/#contact" icon={HiMail}>
 								Contact
