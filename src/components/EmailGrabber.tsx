@@ -1,8 +1,12 @@
+import {
+	HiArrowRight,
+	HiCheck,
+	HiExclamationCircle,
+} from 'react-icons/hi/index.js';
 import React, { useRef, useState } from 'react';
-import emailjs from 'emailjs-com';
-import { IoArrowForward } from 'react-icons/io5/index.js';
-import { IoAlertCircle, IoCheckmark } from 'react-icons/io5/index.js';
+
 import { AiOutlineLoading3Quarters } from 'react-icons/ai/index.js';
+import emailjs from 'emailjs-com';
 
 const EmailGrabber: React.FC = () => {
 	const form = useRef();
@@ -36,7 +40,7 @@ const EmailGrabber: React.FC = () => {
 				<span className="mr-3">
 					Get <strong>25%</strong> off your next website
 				</span>
-				<IoArrowForward />
+				<HiArrowRight />
 			</label>
 			<div className="rounded-lg sm:border-2 border-zinc-900/20 flex sm:p-2 focus-within:border-zinc-900 transition flex-col sm:flex-row space-y-3 sm:space-y-0">
 				<input
@@ -61,8 +65,8 @@ const EmailGrabber: React.FC = () => {
 						</>
 					)}
 					{status === 'idle' && 'Get Coupon'}
-					{status === 'success' && <IoCheckmark size={24} />}
-					{status === 'error' && <IoAlertCircle size={24} />}
+					{status === 'success' && <HiCheck size={24} />}
+					{status === 'error' && <HiExclamationCircle size={24} />}
 				</button>
 			</div>
 		</form>

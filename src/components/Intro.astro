@@ -1,48 +1,45 @@
 ---
+import { HiDocumentText } from 'react-icons/hi/index.js';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5/index.js';
 import Container from './Container.astro';
-import {
-	IoLogoGithub,
-	IoLogoLinkedin,
-	IoReader,
-} from 'react-icons/io5/index.js';
 ---
 
 <Container>
-	<section class='py-24 max-w-screen-md mx-auto' id='about'>
-		<div class='flex items-center flex-col space-y-6 md:flex-row'>
+	<section class="py-24 max-w-screen-md mx-auto" id="about">
+		<div class="flex items-center flex-col space-y-6 md:flex-row">
 			<img
-				src='/me.png'
-				width='200px'
-				height='200px'
-				alt='Raymond Kneipp Portrait'
+				src="/me.png"
+				width="200px"
+				height="200px"
+				alt="Raymond Kneipp Portrait"
 			/>
-			<div class='flex flex-col md:items-start'>
-				<p class='text-zinc-300 text-lg bg-zinc-800 p-6 sm:p-12 rounded-2xl'>
+			<div class="flex flex-col md:items-start">
+				<p class="text-zinc-300 text-lg bg-zinc-800 p-6 sm:p-12 rounded-2xl">
 					Hello, I'm Raymond Kneipp, a Marine Corps veteran and a freelance
 					full-stack web developer based in Cincinnati, Ohio. I spend most of my
 					days keeping up with the ever-changing development ecosystem.
 				</p>
-				<div class='flex items-center gap-3 flex-wrap justify-center mt-3'>
+				<div class="flex items-center gap-3 flex-wrap justify-center mt-3">
 					<a
-						href='https://www.linkedin.com/in/raymondkneipp/'
-						class='flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500'
+						href="https://www.linkedin.com/in/raymondkneipp/"
+						class="flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500"
 					>
 						<IoLogoLinkedin size={24} />
-						<span class='ml-3'>LinkedIn</span>
+						<span class="ml-3">LinkedIn</span>
 					</a>
 					<a
-						href='https://github.com/raymondkneipp'
-						class='flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500'
+						href="https://github.com/raymondkneipp"
+						class="flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500"
 					>
 						<IoLogoGithub size={24} />
-						<span class='ml-3'>GitHub</span>
+						<span class="ml-3">GitHub</span>
 					</a>
 					<a
-						href='/resume.pdf'
-						class='flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500'
+						href="/resume.pdf"
+						class="flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500"
 					>
-						<IoReader size={24} />
-						<span class='ml-3'>Resume</span>
+						<HiDocumentText size={24} />
+						<span class="ml-3">Resume</span>
 					</a>
 				</div>
 			</div>

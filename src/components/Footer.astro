@@ -1,37 +1,34 @@
 ---
-import {
-	IoLogoFacebook,
-	IoLogoTwitter,
-} from 'react-icons/io5/index.js';
+import { IoLogoFacebook, IoLogoTwitter } from 'react-icons/io5/index.js';
 import Container from './Container.astro';
 ---
 
-<footer class='border-t border-zinc-800'>
+<footer class="border-t border-zinc-800">
 	<Container>
 		<div
-			class='flex items-center justify-between flex-col md:flex-row py-6 space-y-3 md:space-y-0'
+			class="flex items-center justify-between flex-col md:flex-row py-6 space-y-3 md:space-y-0"
 		>
-			<div class='flex items-center space-x-3'>
-				<img src='/logo.svg' width='80px' alt='RK Web Design Logo' />
-				<div class='flex flex-col'>
-					<h2 class='font-bold text-zinc-100'>Raymond Kneipp</h2>
-					<h3 class='font-normal text-zinc-400'>Web Design</h3>
+			<div class="flex items-center space-x-3">
+				<img src="/logo.svg" width="80px" alt="RK Web Design Logo" />
+				<div class="flex flex-col">
+					<h2 class="font-bold text-zinc-100">Raymond Kneipp</h2>
+					<h3 class="font-normal text-zinc-400">Web Design</h3>
 				</div>
 			</div>
-			<div class='flex items-center gap-3 flex-wrap justify-center'>
+			<div class="flex items-center gap-3 flex-wrap justify-center">
 				<a
-					href='https://twitter.com/rfkquery'
-					class='flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500'
+					href="https://twitter.com/rfkquery"
+					class="flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500"
 				>
 					<IoLogoTwitter size={24} />
-					<span class='ml-3'>Twitter</span>
+					<span class="ml-3">Twitter</span>
 				</a>
 				<a
-					href='https://www.facebook.com/rfkquery/'
-					class='flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500'
+					href="https://www.facebook.com/rfkquery/"
+					class="flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500"
 				>
 					<IoLogoFacebook size={24} />
-					<span class='ml-3'>Facebook</span>
+					<span class="ml-3">Facebook</span>
 				</a>
 			</div>
 		</div>

@@ -1,5 +1,6 @@
+import { HiCheck, HiDuplicate } from 'react-icons/hi/index.js';
 import React, { useState } from 'react';
-import { IoCheckmark, IoCopy } from 'react-icons/io5/index.js';
+
 import pkg from 'react-copy-to-clipboard';
 
 const CopyEmail: React.FC = () => {
@@ -34,7 +35,7 @@ const CopyEmail: React.FC = () => {
 					disabled={copied}
 					className="font-bold p-3 hover:bg-zinc-800 transition rounded-lg cursor-pointer focus:outline-none text-cyan-500 disabled:bg-transparent disabled:cursor-not-allowed focus-visible:ring focus-visible:ring-cyan-500"
 				>
-					{copied ? <IoCheckmark size={24} /> : <IoCopy size={24} />}
+					{copied ? <HiCheck size={24} /> : <HiDuplicate size={24} />}
 				</button>
 			</CopyToClipboard>
 		</div>

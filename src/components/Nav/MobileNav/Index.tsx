@@ -1,15 +1,14 @@
 import {
-	IoClose,
-	IoCodeSlash,
-	IoHome,
-	IoLogoGithub,
-	IoLogoLinkedin,
-	IoMail,
-	IoMenu,
-	IoNewspaper,
-	IoPerson,
-	IoReader,
-} from 'react-icons/io5/index.js';
+	HiCode,
+	HiDocumentText,
+	HiHome,
+	HiMail,
+	HiMenu,
+	HiNewspaper,
+	HiUser,
+	HiX,
+} from 'react-icons/hi/index.js';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5/index.js';
 import { Popover, Transition } from '@headlessui/react';
 
 import Link from './Link/Index';
@@ -25,9 +24,9 @@ const MobileNav: React.FC = () => {
 						aria-label="menu"
 					>
 						{open ? (
-							<IoClose size={24} aria-hidden="true" />
+							<HiX size={24} aria-hidden="true" />
 						) : (
-							<IoMenu size={24} aria-hidden="true" />
+							<HiMenu size={24} aria-hidden="true" />
 						)}
 					</Popover.Button>
 
@@ -40,19 +39,19 @@ const MobileNav: React.FC = () => {
 						leaveTo="transform scale-95 opacity-0"
 					>
 						<Popover.Panel className="absolute z-40 right-0 bg-zinc-800 p-3 flex flex-col rounded-lg w-56 shadow-lg mt-3">
-							<Link to="/#" icon={IoHome}>
+							<Link to="/#" icon={HiHome}>
 								Home
 							</Link>
-							<Link to="/blog" icon={IoNewspaper}>
+							<Link to="/blog" icon={HiNewspaper}>
 								Blog
 							</Link>
-							<Link to="/#about" icon={IoPerson}>
+							<Link to="/#about" icon={HiUser}>
 								About
 							</Link>
-							<Link to="/#portfolio" icon={IoCodeSlash}>
+							<Link to="/#portfolio" icon={HiCode}>
 								Portfolio
 							</Link>
-							<Link to="/#contact" icon={IoMail}>
+							<Link to="/#contact" icon={HiMail}>
 								Contact
 							</Link>
 							<div className="bg-zinc-700 h-px my-3" />
@@ -65,7 +64,7 @@ const MobileNav: React.FC = () => {
 							<Link to="https://github.com/raymondkneipp" icon={IoLogoGithub}>
 								GitHub
 							</Link>
-							<Link to="/resume.pdf" icon={IoReader}>
+							<Link to="/resume.pdf" icon={HiDocumentText}>
 								Resume
 							</Link>
 						</Popover.Panel>

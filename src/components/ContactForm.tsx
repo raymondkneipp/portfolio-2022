@@ -1,7 +1,8 @@
+import { HiCheck, HiExclamationCircle } from 'react-icons/hi/index.js';
 import React, { useRef, useState } from 'react';
-import emailjs from 'emailjs-com';
-import { IoAlertCircle, IoCheckmark } from 'react-icons/io5/index.js';
+
 import { AiOutlineLoading3Quarters } from 'react-icons/ai/index.js';
+import emailjs from 'emailjs-com';
 
 const ContactForm: React.FC = () => {
 	const form = useRef();
@@ -72,8 +73,8 @@ const ContactForm: React.FC = () => {
 					</span>
 				)}
 				{status === 'idle' && 'Send'}
-				{status === 'success' && <IoCheckmark size={24} />}
-				{status === 'error' && <IoAlertCircle size={24} />}
+				{status === 'success' && <HiCheck size={24} />}
+				{status === 'error' && <HiExclamationCircle size={24} />}
 			</button>
 		</form>
 	);

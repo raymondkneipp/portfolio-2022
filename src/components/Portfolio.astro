@@ -1,5 +1,5 @@
 ---
-import { IoEye, IoGitBranch, IoLockClosed } from 'react-icons/io5/index.js';
+import { HiCode, HiLink, HiLockClosed } from 'react-icons/hi/index.js';
 import Container from './Container.astro';
 
 const token = import.meta.env.GITHUB_TOKEN;
@@ -68,13 +68,13 @@ const projects = data.data.user.pinnedItems.edges;
 						href="https://alpost.org"
 						class="flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500"
 					>
-						<IoEye size={24} />
-						<span class="ml-3">Preview</span>
+						<HiLink size={24} />
+						<span class="ml-3">Visit</span>
 					</a>
 					<span
 						class="flex items-center text-zinc-400 transition px-3 py-1.5 rounded-lg"
 					>
-						<IoLockClosed size={24} />
+						<HiLockClosed size={24} />
 						<span class="ml-3">Private</span>
 					</span>
 				</div>
@@ -143,14 +143,14 @@ const projects = data.data.user.pinnedItems.edges;
 									href={homepageUrl}
 									class="flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500"
 								>
-									<IoEye size={24} />
-									<span class="ml-3">Preview</span>
+									<HiLink size={24} />
+									<span class="ml-3">Visit</span>
 								</a>
 								<a
 									href={url}
 									class="flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500"
 								>
-									<IoGitBranch size={24} />
+									<HiCode size={24} />
 									<span class="ml-3">Source</span>
 								</a>
 							</div>
