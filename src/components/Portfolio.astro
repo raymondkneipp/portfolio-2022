@@ -1,5 +1,5 @@
 ---
-import { HiCode, HiLink, HiLockClosed } from 'react-icons/hi/index.js';
+import { HiExternalLink } from 'react-icons/hi/index.js';
 import Container from './Container.astro';
 
 const token = import.meta.env.GITHUB_TOKEN;
@@ -56,31 +56,22 @@ const projects = data.data.user.pinnedItems.edges;
 					alt={`screenshot of alpost`}
 					class="rounded-2xl"
 				/>
-				<div class="flex items-baseline gap-3 flex-wrap">
-					<h3 class="text-2xl font-bold text-zinc-100 capitalize">alpost</h3>
-					<p class="text-zinc-400">August 2022</p>
+				<div>
+					<div class="flex items-center gap-3 justify-between">
+						<h3 class="text-2xl font-bold text-zinc-100 capitalize">Alpost</h3>
+						<span class="text-zinc-400 text-sm">August 2022</span>
+					</div>
+					<a
+						href="https://alpost.org"
+						target="_blank"
+						class="text-zinc-400 hover:text-zinc-100 transition select-all"
+						>alpost.org</a
+					>
 				</div>
-
-				<p class="text-zinc-400">
+				<p class="text-zinc-300">
 					Feature-rich and easy-to-use online website builder that allows the
 					creation of a web presence for American Legion Posts.
 				</p>
-
-				<div class="flex items-center flex-wrap space-x-3">
-					<a
-						href="https://alpost.org"
-						class="flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
-					>
-						<HiLink size={24} />
-						<span class="ml-3">Visit</span>
-					</a>
-					<span
-						class="flex items-center text-zinc-400 transition px-3 py-1.5 rounded-lg"
-					>
-						<HiLockClosed size={24} />
-						<span class="ml-3">Private</span>
-					</span>
-				</div>
 
 				<div class="flex items-center flex-wrap gap-3">
 					{
@@ -134,27 +125,31 @@ const projects = data.data.user.pinnedItems.edges;
 								alt={`screenshot of ${name}`}
 								class="rounded-2xl"
 							/>
-							<div class="flex items-baseline gap-3 flex-wrap">
-								<h3 class="text-2xl font-bold text-zinc-100 capitalize">
-									{name}
-								</h3>
-								<p class="text-zinc-400">{date}</p>
-							</div>
-							<p class="text-zinc-400">{description}</p>
-							<div class="flex items-center flex-wrap space-x-3">
+							<div>
+								<div class="flex items-center gap-3 justify-between">
+									<h3 class="text-2xl font-bold text-zinc-100 capitalize">
+										{name}
+									</h3>
+									<span class="text-zinc-400 text-sm">{date}</span>
+								</div>
 								<a
 									href={homepageUrl}
-									class="flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
+									target="_blank"
+									class="text-zinc-400 hover:text-zinc-100 transition select-all"
 								>
-									<HiLink size={24} />
-									<span class="ml-3">Visit</span>
+									{homepageUrl.replace(/^https?:\/\//, '').replace(/\/+$/, '')}
 								</a>
+							</div>
+							<p class="text-zinc-300">{description}</p>
+
+							<div>
 								<a
 									href={url}
-									class="flex items-center text-zinc-400 hover:text-zinc-100 transition hover:bg-zinc-800 px-3 py-1.5 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
+									target="_blank"
+									class="text-blue-400 hover:text-blue-300 transition flex gap-1 items-center justify-start"
 								>
-									<HiCode size={24} />
-									<span class="ml-3">Source</span>
+									<HiExternalLink />
+									<span>View source code on GitHub</span>
 								</a>
 							</div>
 
