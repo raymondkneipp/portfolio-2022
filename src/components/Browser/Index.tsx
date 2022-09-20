@@ -27,13 +27,13 @@ const Browser: React.FC = () => {
 					<Dot />
 					<Dot />
 				</div>
-				<BrowserTab icon={IoDiamond} color="blue">
+				<BrowserTab icon={IoDiamond} color="text-blue-400">
 					Custom
 				</BrowserTab>
-				<BrowserTab icon={IoFlashSharp} color="amber">
+				<BrowserTab icon={IoFlashSharp} color="text-amber-400">
 					Speed
 				</BrowserTab>
-				<BrowserTab icon={IoSearchSharp} color="emerald">
+				<BrowserTab icon={IoSearchSharp} color="text-emerald-400">
 					SEO
 				</BrowserTab>
 			</Tab.List>
@@ -42,7 +42,7 @@ const Browser: React.FC = () => {
 				<TabPanel
 					icon={IoDiamond}
 					title="Stand Out Among Cookie Cutter Websites"
-					color="blue"
+					color="text-blue-400"
 				>
 					<p className="indent-6">
 						Your website needs to stand out amidst your vast competition.
@@ -54,7 +54,7 @@ const Browser: React.FC = () => {
 				<TabPanel
 					icon={IoFlashSharp}
 					title="Fast Load Times Leads to More Sales"
-					color="amber"
+					color="text-amber-400"
 				>
 					<p className="indent-6">
 						Load time is when you make your first impression. If your website is
@@ -65,7 +65,7 @@ const Browser: React.FC = () => {
 				<TabPanel
 					icon={IoSearchSharp}
 					title="Rank Higher Than Your Competitors"
-					color="emerald"
+					color="text-emerald-400"
 				>
 					<p className="indent-6">
 						Organic search is most often the primary source of a website's

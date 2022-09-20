@@ -18,7 +18,7 @@ const BrowserTab: React.FC<Props> = ({ children, icon, color, active }) => {
 						selected ? 'bg-neutral-700/50' : 'hover:bg-neutral-700/25'
 					}`}
 				>
-					<div className={`text-${color}-500 mr-1 sm:mr-2`}>
+					<div className={`${color} mr-1 sm:mr-2`}>
 						{React.createElement(icon, { size: 24 })}
 					</div>
 					{children}
