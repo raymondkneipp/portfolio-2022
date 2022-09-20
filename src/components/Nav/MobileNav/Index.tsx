@@ -20,7 +20,7 @@ const MobileNav: React.FC = () => {
 			{({ open }) => (
 				<>
 					<Popover.Button
-						className="text-zinc-100 p-3 hover:bg-zinc-800 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500"
+						className="text-zinc-100 p-3 hover:bg-zinc-800 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
 						aria-label="menu"
 					>
 						{open ? (

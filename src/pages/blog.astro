@@ -1,52 +1,61 @@
 ---
-import Layout from '@layouts/Layout.astro';
 import Container from '@components/Container.astro';
+import Layout from '@layouts/Layout.astro';
 
 const posts = await Astro.glob('./posts/*.md');
-posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+posts.sort(
+	(a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date)
+);
 ---
 
-<Layout title='Blog'>
+<Layout title="Blog">
 	<main>
 		<Container>
-			<section class='space-y-6 py-24'>
-				<h1 class='text-zinc-100 text-5xl font-bold'>Blog</h1>
+			<section class="space-y-6 py-24">
+				<h1 class="text-zinc-100 text-5xl font-bold">Blog</h1>
 
-				<div class='grid md:grid-cols-2 lg:grid-cols-3 gap-12'>
-					{posts.map((post) => (
-						<a href={post.url} class="bg-zinc-800 rounded-2xl overflow-hidden focus:outline-none focus-visible:ring focus-visible:ring-cyan-500">
-							<article class="flex flex-col h-full">
-								<img
-									src={post.frontmatter.image}
-									width="100%"
-									height="200px"
-									alt={`${post.frontmatter.title}`}
-								/>
-								<div class="p-6 space-y-3 flex-1 flex flex-col">
-								<h2 class="text-zinc-100 text-2xl font-bold">
-									{post.frontmatter.title}
-								</h2>
-								<p class="flex-1">{post.frontmatter.description}</p>
-								<div class="h-px bg-zinc-700" />
-								<div class="flex items-center space-x-3">
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+					{
+						posts.map((post) => (
+							<a
+								href={post.url}
+								class="bg-zinc-800 rounded-2xl overflow-hidden focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
+							>
+								<article class="flex flex-col h-full">
 									<img
-										src={post.frontmatter.avatar}
-										width="50px"
-										height="50px"
-										alt={`${post.frontmatter.author} portrait`}
-										class="bg-zinc-100 rounded-full"
+										src={post.frontmatter.image}
+										width="100%"
+										height="200px"
+										alt={`${post.frontmatter.title}`}
 									/>
-									<div class="space-y-1">
-										<h2 class="font-bold text-zinc-100">
-											{post.frontmatter.author}
+									<div class="p-6 space-y-3 flex-1 flex flex-col">
+										<h2 class="text-zinc-100 text-2xl font-bold">
+											{post.frontmatter.title}
 										</h2>
-										<p class="text-zinc-400">{new Date(post.frontmatter.date).toDateString()}</p>
+										<p class="flex-1">{post.frontmatter.description}</p>
+										<div class="h-px bg-zinc-700" />
+										<div class="flex items-center space-x-3">
+											<img
+												src={post.frontmatter.avatar}
+												width="50px"
+												height="50px"
+												alt={`${post.frontmatter.author} portrait`}
+												class="bg-zinc-100 rounded-full"
+											/>
+											<div class="space-y-1">
+												<h2 class="font-bold text-zinc-100">
+													{post.frontmatter.author}
+												</h2>
+												<p class="text-zinc-400">
+													{new Date(post.frontmatter.date).toDateString()}
+												</p>
+											</div>
+										</div>
 									</div>
-								</div>
-									</div>
-							</article>
-						</a>
-					))}
+								</article>
+							</a>
+						))
+					}
 				</div>
 			</section>
 		</Container>

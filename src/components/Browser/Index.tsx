@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import { Tab } from '@headlessui/react';
 import {
 	IoDiamond,
 	IoFlashSharp,
 	IoSearchSharp,
 } from 'react-icons/io5/index.js';
+import React, { useState } from 'react';
+
 import BrowserTab from './BrowserTab/Index';
 import Dot from './Dot/Index';
-import URL from './URL/Index';
+import { Tab } from '@headlessui/react';
 import TabPanel from './TabPanel/Index';
+import URL from './URL/Index';
 
 const Browser: React.FC = () => {
 	const pages = ['custom', 'speed', 'seo'];
@@ -26,7 +27,7 @@ const Browser: React.FC = () => {
 					<Dot />
 					<Dot />
 				</div>
-				<BrowserTab icon={IoDiamond} color="cyan">
+				<BrowserTab icon={IoDiamond} color="blue">
 					Custom
 				</BrowserTab>
 				<BrowserTab icon={IoFlashSharp} color="amber">
@@ -41,7 +42,7 @@ const Browser: React.FC = () => {
 				<TabPanel
 					icon={IoDiamond}
 					title="Stand Out Among Cookie Cutter Websites"
-					color="cyan"
+					color="blue"
 				>
 					<p className="indent-6">
 						Your website needs to stand out amidst your vast competition.
