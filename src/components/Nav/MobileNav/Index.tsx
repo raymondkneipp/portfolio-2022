@@ -20,7 +20,7 @@ const MobileNav: React.FC = () => {
 			{({ open }) => (
 				<>
 					<Popover.Button
-						className="text-zinc-100 p-3 hover:bg-zinc-800 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
+						className="text-neutral-100 p-3 hover:bg-neutral-800 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
 						aria-label="menu"
 					>
 						{open ? (
@@ -38,7 +38,7 @@ const MobileNav: React.FC = () => {
 						leaveFrom="transform scale-100 opacity-100"
 						leaveTo="transform scale-95 opacity-0"
 					>
-						<Popover.Panel className="absolute z-40 right-0 bg-zinc-800 p-3 flex flex-col rounded-lg w-56 shadow-lg mt-3">
+						<Popover.Panel className="absolute z-40 right-0 bg-neutral-800 p-3 flex flex-col rounded-lg w-56 shadow-lg mt-3">
 							<Link to="/#" icon={HiHome}>
 								Home
 							</Link>
@@ -54,7 +54,7 @@ const MobileNav: React.FC = () => {
 							<Link to="/#contact" icon={HiMail}>
 								Contact
 							</Link>
-							<div className="bg-zinc-700 h-px my-3" />
+							<div className="bg-neutral-700 h-px my-3" />
 							<Link
 								to="https://www.linkedin.com/in/raymondkneipp/"
 								icon={IoLogoLinkedin}

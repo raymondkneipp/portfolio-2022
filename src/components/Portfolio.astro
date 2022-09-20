@@ -47,7 +47,7 @@ const projects = data.data.user.pinnedItems.edges;
 
 <Container>
 	<section class="py-24 space-y-6" id="portfolio">
-		<h2 class="text-4xl font-bold text-zinc-100">My Work</h2>
+		<h2 class="text-4xl font-bold text-neutral-100">My Work</h2>
 
 		<div class="grid lg:grid-cols-2 gap-12">
 			<div class="space-y-3">
@@ -58,17 +58,19 @@ const projects = data.data.user.pinnedItems.edges;
 				/>
 				<div>
 					<div class="flex items-center gap-3 justify-between">
-						<h3 class="text-2xl font-bold text-zinc-100 capitalize">Alpost</h3>
-						<span class="text-zinc-400 text-sm">August 2022</span>
+						<h3 class="text-2xl font-bold text-neutral-100 capitalize">
+							Alpost
+						</h3>
+						<span class="text-neutral-400 text-sm">August 2022</span>
 					</div>
 					<a
 						href="https://alpost.org"
 						target="_blank"
-						class="text-zinc-400 hover:text-zinc-100 transition select-all"
+						class="text-neutral-400 hover:text-neutral-100 transition select-all"
 						>alpost.org</a
 					>
 				</div>
-				<p class="text-zinc-300">
+				<p class="text-neutral-300">
 					Feature-rich and easy-to-use online website builder that allows the
 					creation of a web presence for American Legion Posts.
 				</p>
@@ -91,7 +93,7 @@ const projects = data.data.user.pinnedItems.edges;
 						].map((item) => (
 							<a
 								href={`https://github.com/topics/${item}`}
-								class="text-sm bg-zinc-800 text-zinc-400 rounded-full py-1 px-2 hover:text-white transition"
+								class="text-sm bg-neutral-800 text-neutral-400 rounded-full py-1 px-2 hover:text-white transition"
 							>
 								{item}
 							</a>
@@ -127,20 +129,20 @@ const projects = data.data.user.pinnedItems.edges;
 							/>
 							<div>
 								<div class="flex items-center gap-3 justify-between">
-									<h3 class="text-2xl font-bold text-zinc-100 capitalize">
+									<h3 class="text-2xl font-bold text-neutral-100 capitalize">
 										{name}
 									</h3>
-									<span class="text-zinc-400 text-sm">{date}</span>
+									<span class="text-neutral-400 text-sm">{date}</span>
 								</div>
 								<a
 									href={homepageUrl}
 									target="_blank"
-									class="text-zinc-400 hover:text-zinc-100 transition select-all"
+									class="text-neutral-400 hover:text-neutral-100 transition select-all"
 								>
 									{homepageUrl.replace(/^https?:\/\//, '').replace(/\/+$/, '')}
 								</a>
 							</div>
-							<p class="text-zinc-300">{description}</p>
+							<p class="text-neutral-300">{description}</p>
 
 							<div>
 								<a
@@ -157,7 +159,7 @@ const projects = data.data.user.pinnedItems.edges;
 								{topics.map((topic) => (
 									<a
 										href={`https://github.com/topics/${topic.topic.name}`}
-										class="text-sm bg-zinc-800 text-zinc-400 rounded-full py-1 px-2 hover:text-white transition"
+										class="text-sm bg-neutral-800 text-neutral-400 rounded-full py-1 px-2 hover:text-white transition"
 									>
 										{topic.topic.name}
 									</a>

@@ -33,7 +33,7 @@ const CopyEmail: React.FC = () => {
 			>
 				<button
 					disabled={copied}
-					className="font-bold p-3 hover:bg-zinc-800 transition rounded-lg cursor-pointer focus:outline-none text-blue-400 disabled:bg-transparent disabled:cursor-not-allowed focus-visible:ring focus-visible:ring-blue-400"
+					className="font-bold p-3 hover:bg-neutral-800 transition rounded-lg cursor-pointer focus:outline-none text-blue-400 disabled:bg-transparent disabled:cursor-not-allowed focus-visible:ring focus-visible:ring-blue-400"
 				>
 					{copied ? <HiCheck size={24} /> : <HiDuplicate size={24} />}
 				</button>

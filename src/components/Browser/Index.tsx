@@ -17,7 +17,7 @@ const Browser: React.FC = () => {
 
 	return (
 		<Tab.Group
-			className="flex flex-col rounded-2xl bg-zinc-800/50 shadow-lg sm:mx-12 md:mx-0 md:absolute right-0 left-1/2 md:rounded-r-none overflow-hidden"
+			className="flex flex-col rounded-2xl bg-neutral-800/50 shadow-lg sm:mx-12 md:mx-0 md:absolute right-0 left-1/2 md:rounded-r-none overflow-hidden"
 			as="div"
 			onChange={(index) => setPage(pages[index])}
 		>

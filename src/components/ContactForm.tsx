@@ -65,7 +65,7 @@ const ContactForm: React.FC = () => {
 				type="submit"
 				disabled={status !== 'idle'}
 				value="Send Message"
-				className="font-bold text-zinc-900 bg-blue-400 px-6 py-3 hover:bg-blue-300 transition rounded-lg cursor-pointer focus:outline-none focus-visible:ring focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 flex items-center justify-center disabled:bg-blue-400/75 disabled:cursor-not-allowed"
+				className="font-bold text-neutral-900 bg-blue-400 px-6 py-3 hover:bg-blue-300 transition rounded-lg cursor-pointer focus:outline-none focus-visible:ring focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900 flex items-center justify-center disabled:bg-blue-400/75 disabled:cursor-not-allowed"
 			>
 				{status === 'loading' && (
 					<span className="animate-spin">
