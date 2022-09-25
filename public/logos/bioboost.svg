@@ -210,8 +210,5 @@
       </g>
     </svg>
   </g>
-  <style
-     id="style945">@media (prefers-color-scheme: light) { :root { filter: none; } }
-@media (prefers-color-scheme: dark) { :root { filter: contrast(0.3846153846153846) brightness(4.5); } }
-</style>
+ 
 </svg>
