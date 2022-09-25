@@ -51,11 +51,17 @@ const projects = data.data.user.pinnedItems.edges;
 
 		<div class="grid lg:grid-cols-2 gap-12">
 			<div class="space-y-3">
-				<img
-					src="/alpost.png"
-					alt={`screenshot of alpost`}
-					class="rounded-2xl"
-				/>
+				<a
+					href="https://alpost.org"
+					target="_blank"
+					class="text-neutral-400 hover:text-neutral-100 transition select-all"
+				>
+					<img
+						src="/alpost.png"
+						alt={`screenshot of alpost`}
+						class="rounded-2xl"
+					/>
+				</a>
 				<div>
 					<div class="flex items-center gap-3 justify-between">
 						<h3 class="text-2xl font-bold text-neutral-100 capitalize">
@@ -123,11 +129,17 @@ const projects = data.data.user.pinnedItems.edges;
 
 					return (
 						<div class="space-y-3">
-							<img
-								src={openGraphImageUrl}
-								alt={`screenshot of ${name}`}
-								class="rounded-2xl"
-							/>
+							<a
+								href={homepageUrl}
+								target="_blank"
+								class="text-neutral-400 hover:text-neutral-100 transition select-all"
+							>
+								<img
+									src={openGraphImageUrl}
+									alt={`screenshot of ${name}`}
+									class="rounded-2xl"
+								/>
+							</a>
 							<div>
 								<div class="flex items-center gap-3 justify-between">
 									<h3 class="text-2xl font-bold text-neutral-100 capitalize">
