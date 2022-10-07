@@ -40,8 +40,8 @@ const MobileNav: React.FC = () => {
 						<Link to="/#about" icon={HiUser}>
 							About
 						</Link>
-						<Link to="/#portfolio" icon={HiCollection}>
-							My Work
+						<Link to="/#website-projects" icon={HiCollection}>
+							Projects
 						</Link>
 						<Link to="/#contact" icon={HiMail}>
 							Contact

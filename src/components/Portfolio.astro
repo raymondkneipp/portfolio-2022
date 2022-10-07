@@ -1,5 +1,5 @@
 ---
-import { HiExternalLink } from 'react-icons/hi/index.js';
+import { HiExternalLink, HiLockClosed } from 'react-icons/hi/index.js';
 import Container from './Container.astro';
 
 const token = import.meta.env.GITHUB_TOKEN;
@@ -46,8 +46,8 @@ const projects = data.data.user.pinnedItems.edges;
 ---
 
 <Container>
-	<section class="py-24 space-y-6" id="portfolio">
-		<h2 class="text-4xl font-bold text-neutral-100">My Work</h2>
+	<section class="py-24 space-y-6" id="website-projects">
+		<h2 class="text-4xl font-bold text-neutral-100">My Projects</h2>
 
 		<div class="grid lg:grid-cols-2 gap-12">
 			<div class="space-y-3">
@@ -81,6 +81,13 @@ const projects = data.data.user.pinnedItems.edges;
 					creation of a web presence for American Legion Posts using
 					multi-tenant architecture.
 				</p>
+
+				<div
+					class="cursor-not-allowed text-neutral-400 flex gap-1 items-center justify-start"
+				>
+					<HiLockClosed />
+					<span>This is a private repository</span>
+				</div>
 
 				<div class="flex items-center flex-wrap gap-3">
 					{
