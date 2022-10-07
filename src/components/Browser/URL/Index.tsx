@@ -7,7 +7,7 @@ type Props = {
 
 const URL: React.FC = ({ children }) => {
 	return (
-		<div className="bg-neutral-700/50 p-3">
+		<div className="bg-neutral-800 p-3">
 			<div className="bg-neutral-900 rounded-lg flex p-3 items-center">
 				<span className="text-neutral-700 mr-2">
 					<HiLockClosed size={18} />

@@ -13,13 +13,19 @@ const TabPanel: React.FC<Props> = ({ children, icon, title, color }) => {
 	return (
 		<Tab.Panel
 			as="div"
-			className="p-6 md:p-12 space-y-6 text-neutral-300 text-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
+			className="p-6 md:p-12 text-neutral-300 text-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400 relative overflow-hidden"
 		>
-			<div className={`${color} flex items-center`}>
-				<span className="mr-3">{React.createElement(icon, { size: 48 })}</span>
-				<h3 className="font-bold">{title}</h3>
+			<span
+				className={`absolute opacity-5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${color}`}
+			>
+				{React.createElement(icon, { size: 500 })}
+			</span>
+			<div className="flex flex-col gap-6">
+				<div className={`${color} flex items-center`}>
+					<h3 className="font-bold">{title}</h3>
+				</div>
+				{children}
 			</div>
-			{children}
 		</Tab.Panel>
 	);
 };

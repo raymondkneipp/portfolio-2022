@@ -17,7 +17,7 @@ const Browser: React.FC = () => {
 
 	return (
 		<Tab.Group
-			className="flex flex-col rounded-2xl bg-neutral-800/50 shadow-lg sm:mx-12 md:mx-0 md:absolute right-0 left-1/2 md:rounded-r-none overflow-hidden"
+			className="flex flex-col rounded-2xl bg-neutral-900 shadow-lg sm:mx-12 md:mx-0 md:absolute right-0 left-1/2 md:rounded-r-none overflow-hidden"
 			as="div"
 			onChange={(index) => setPage(pages[index])}
 		>
@@ -45,9 +45,9 @@ const Browser: React.FC = () => {
 					color="text-blue-400"
 				>
 					<p className="indent-6">
-						Your website needs to stand out amidst your vast competition.
-						Something eye-catching, easy to use, and optimized for conversion.
-						Your website is an extension of your business, and there is no
+						Your website needs to stand out amidst your competition. Something
+						eye-catching, easy to use, and optimized for conversion. Your
+						website is an extension of your business, and there is no
 						one-size-fits-all template.
 					</p>
 				</TabPanel>

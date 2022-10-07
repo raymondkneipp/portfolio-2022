@@ -15,7 +15,7 @@ const BrowserTab: React.FC<Props> = ({ children, icon, color, active }) => {
 			{({ selected }) => (
 				<button
 					className={`rounded-t-lg p-3 flex-1 flex items-center justify-start text-neutral-300 overflow-hidden transition focus:outline-none focus-visible:ring focus-visible:ring-blue-400 z-30 ${
-						selected ? 'bg-neutral-700/50' : 'hover:bg-neutral-700/25'
+						selected ? 'bg-neutral-800' : 'hover:bg-neutral-800/50'
 					}`}
 				>
 					<div className={`${color} mr-1 sm:mr-2`}>
