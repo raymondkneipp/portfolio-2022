@@ -19,7 +19,9 @@ const { content } = Astro.props;
 				alt={content.title}
 				class="rounded-2xl"
 			/>
-			<h1 class="text-neutral-100 text-5xl font-bold">{content.title}</h1>
+			<h1 class="text-neutral-100 text-5xl font-bold font-heading">
+				{content.title}
+			</h1>
 
 			<div class="flex items-center space-x-3">
 				<img
