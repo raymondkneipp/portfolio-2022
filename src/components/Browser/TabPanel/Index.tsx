@@ -22,7 +22,7 @@ const TabPanel: React.FC<Props> = ({ children, icon, title, color }) => {
 			</span>
 			<div className="flex flex-col gap-6">
 				<div className={`${color} flex items-center`}>
-					<h3 className="font-bold">{title}</h3>
+					<h3 className="font-bold font-heading">{title}</h3>
 				</div>
 				{children}
 			</div>
