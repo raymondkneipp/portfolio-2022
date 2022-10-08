@@ -254,7 +254,7 @@ const Timeline: React.FC = () => {
 						)}
 
 						{/* Dot */}
-						<div className="h-[9px] w-[9px] ml-px rounded-2xl bg-blue-400 mt-2"></div>
+						<div className="h-[9px] w-[9px] ml-px rounded-2xl bg-blue-400 mt-2 z-40"></div>
 
 						{i % 2 === 0 ? (
 							<div className="flex flex-col items-start gap-3">
