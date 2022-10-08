@@ -1,6 +1,6 @@
 ---
-import { HiExternalLink, HiLockClosed } from 'react-icons/hi/index.js';
 import Container from './Container.astro';
+import { Project } from './Project';
 
 const token = import.meta.env.GITHUB_TOKEN;
 const url = 'https://api.github.com/graphql';
@@ -51,77 +51,36 @@ const projects = data.data.user.pinnedItems.edges;
 			My Projects
 		</h2>
 
-		<div class="grid lg:grid-cols-2 gap-12">
-			<div class="space-y-3">
-				<a
-					href="https://alpost.org"
-					target="_blank"
-					class="text-neutral-400 hover:text-neutral-100 transition select-all"
-				>
-					<img
-						src="/alpost.png"
-						alt={`screenshot of alpost`}
-						class="rounded-2xl"
-					/>
-				</a>
-				<div>
-					<div class="flex items-center gap-3 justify-between">
-						<h3
-							class="text-2xl text-neutral-100 capitalize font-heading font-semibold"
-						>
-							Alpost
-						</h3>
-						<span class="text-neutral-400 text-sm">May 2022</span>
-					</div>
-					<a
-						href="https://alpost.org"
-						target="_blank"
-						class="text-neutral-400 hover:text-neutral-100 transition select-all"
-						>alpost.org</a
-					>
-				</div>
-				<p class="text-neutral-300">
-					Feature-rich and easy-to-use online website builder that allows the
-					creation of a web presence for American Legion Posts using
-					multi-tenant architecture.
-				</p>
-
-				<div
-					class="cursor-not-allowed text-neutral-400 flex gap-1 items-center justify-start"
-				>
-					<HiLockClosed />
-					<span>This is a private repository</span>
-				</div>
-
-				<div class="flex items-center flex-wrap gap-3">
-					{
-						[
-							'typescript',
-							'react',
-							'nextjs',
-							'react-query',
-							'tRPC',
-							'react-hook-form',
-							'prisma',
-							'zod',
-							'sendgrid',
-							'headlessui',
-							'next-auth',
-							'stripe',
-						].map((item) => (
-							<a
-								href={`https://github.com/topics/${item}`}
-								class="text-sm bg-neutral-800 text-neutral-400 rounded-full py-1 px-2 hover:text-white transition"
-							>
-								{item}
-							</a>
-						))
-					}
-				</div>
-			</div>
+		<div class="grid lg:grid-cols-1 gap-12">
+			<Project
+				client:load
+				url="https://alpost.org"
+				image="/alpost.png"
+				name="Alpost"
+				date="May 2022"
+				topics={[
+					{ topic: { name: 'typescript' } },
+					{ topic: { name: 'react' } },
+					{ topic: { name: 'nextjs' } },
+					{ topic: { name: 'react-query' } },
+					{ topic: { name: 'trpc' } },
+					{ topic: { name: 'react-hook-form' } },
+					{ topic: { name: 'prisma' } },
+					{ topic: { name: 'zod' } },
+					{ topic: { name: 'sendgrid' } },
+					{ topic: { name: 'headlessui' } },
+					{ topic: { name: 'next-auth' } },
+					{ topic: { name: 'stripe' } },
+				]}
+				source={false}
+			>
+				Feature-rich and easy-to-use online website builder that allows the
+				creation of a web presence for American Legion Posts using multi-tenant
+				architecture.
+			</Project>
 
 			{
-				projects.map((project) => {
+				projects.map((project, i) => {
 					const {
 						name,
 						createdAt,
@@ -139,57 +98,19 @@ const projects = data.data.user.pinnedItems.edges;
 					})}`;
 
 					return (
-						<div class="space-y-3">
-							<a
-								href={homepageUrl}
-								target="_blank"
-								class="text-neutral-400 hover:text-neutral-100 transition select-all"
-							>
-								<img
-									src={openGraphImageUrl}
-									alt={`screenshot of ${name}`}
-									class="rounded-2xl"
-								/>
-							</a>
-							<div>
-								<div class="flex items-center gap-3 justify-between">
-									<h3 class="text-2xl text-neutral-100 capitalize font-heading font-semibold">
-										{name}
-									</h3>
-									<span class="text-neutral-400 text-sm">{date}</span>
-								</div>
-								<a
-									href={homepageUrl}
-									target="_blank"
-									class="text-neutral-400 hover:text-neutral-100 transition select-all"
-								>
-									{homepageUrl.replace(/^https?:\/\//, '').replace(/\/+$/, '')}
-								</a>
-							</div>
-							<p class="text-neutral-300">{description}</p>
-
-							<div>
-								<a
-									href={url}
-									target="_blank"
-									class="text-blue-400 hover:text-blue-300 transition flex gap-1 items-center justify-start"
-								>
-									<HiExternalLink />
-									<span>View source code on GitHub</span>
-								</a>
-							</div>
-
-							<div class="flex items-center flex-wrap gap-3">
-								{topics.map((topic) => (
-									<a
-										href={`https://github.com/topics/${topic.topic.name}`}
-										class="text-sm bg-neutral-800 text-neutral-400 rounded-full py-1 px-2 hover:text-white transition"
-									>
-										{topic.topic.name}
-									</a>
-								))}
-							</div>
-						</div>
+						<Project
+							client:load
+							url={homepageUrl}
+							image={openGraphImageUrl}
+							name={name}
+							date={date}
+							topics={topics}
+							source={url}
+							key={i}
+							flip={i % 2 === 0}
+						>
+							{description}
+						</Project>
 					);
 				})
 			}
