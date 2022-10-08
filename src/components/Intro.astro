@@ -1,11 +1,11 @@
 ---
-import { HiDocumentText } from 'react-icons/hi/index.js';
+import { HiArrowRight, HiDocumentText } from 'react-icons/hi/index.js';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5/index.js';
 import Container from './Container.astro';
 ---
 
 <Container>
-	<section class="py-24 max-w-screen-md mx-auto" id="about">
+	<section class="py-24 max-w-screen-md mx-auto">
 		<div class="flex items-center flex-col space-y-6 md:flex-row">
 			<img
 				src="/me.png"
@@ -14,13 +14,20 @@ import Container from './Container.astro';
 				alt="Raymond Kneipp Portrait"
 			/>
 			<div class="flex flex-col md:items-start">
-				<p
-					class="text-neutral-300 text-lg bg-neutral-900 p-6 sm:p-12 rounded-2xl"
-				>
-					Hello, I'm Raymond Kneipp, a Marine Corps veteran and a full-stack web
-					developer based in Cincinnati, Ohio. I spend most of my days learning
-					to keep up with the ever-changing development ecosystem.
-				</p>
+				<div class="bg-neutral-900 p-6 sm:p-12 rounded-2xl flex flex-col gap-3">
+					<p class="text-neutral-300 text-lg">
+						Hello, I'm Raymond Kneipp, a Marine Corps veteran and a full-stack
+						web developer based in Cincinnati, Ohio. I spend most of my days
+						learning to keep up with the ever-changing development ecosystem.
+					</p>
+					<a
+						href="/about"
+						class="text-blue-400 hover:text-blue-300 transition flex gap-1 items-center justify-start"
+					>
+						<span>Read More</span>
+						<HiArrowRight />
+					</a>
+				</div>
 				<div class="flex items-center gap-3 flex-wrap justify-center mt-3">
 					<a
 						href="https://www.linkedin.com/in/raymondkneipp/"

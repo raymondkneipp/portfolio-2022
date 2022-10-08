@@ -37,7 +37,7 @@ const MobileNav: React.FC = () => {
 						<Link to="/blog" icon={HiPencil}>
 							Blog
 						</Link>
-						<Link to="/#about" icon={HiUser}>
+						<Link to="/about" icon={HiUser}>
 							About
 						</Link>
 						<Link to="/#website-projects" icon={HiCollection}>
