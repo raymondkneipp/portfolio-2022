@@ -78,6 +78,7 @@ export const Project: React.FC<Props> = ({
 					{topics.map((topic) => (
 						<a
 							href={`https://github.com/topics/${topic.topic.name}`}
+							target="_blank"
 							className="text-sm bg-neutral-800 text-neutral-400 rounded-full py-1 px-2 hover:text-white transition"
 						>
 							{topic.topic.name}
