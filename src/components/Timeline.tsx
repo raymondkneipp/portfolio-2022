@@ -234,7 +234,7 @@ const Timeline: React.FC = () => {
 
 			<div className="relative flex-col gap-12 hidden md:flex">
 				{/* Vertical line */}
-				<div className="w-px h-full bg-blue-400 absolute inset-y-0 left-1/2 opacity-20"></div>
+				<div className="w-px h-full bg-neutral-800 absolute inset-y-0 left-1/2"></div>
 
 				{events.sort(sortByDate).map((event, i) => (
 					<div className="grid grid-cols-[1fr_auto_1fr] gap-3" key={i}>
@@ -275,7 +275,7 @@ const Timeline: React.FC = () => {
 			</div>
 
 			<div className="flex-col gap-12 flex md:hidden relative">
-				<div className="w-px h-full bg-blue-400 absolute inset-y-0 left-0 opacity-20"></div>
+				<div className="w-px h-full bg-neutral-800 absolute inset-y-0 left-0"></div>
 				{events.sort(sortByDate).map((event, i) => (
 					<div className="flex flex-col gap-3 items-start" key={i}>
 						<div className="flex items-center gap-3">
