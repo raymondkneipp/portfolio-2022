@@ -228,7 +228,7 @@ const events: Event[] = [
 const Timeline: React.FC = () => {
 	return (
 		<div className="flex flex-col gap-6 py-24 container mx-auto px-3">
-			<h2 class="text-4xl font-bold text-neutral-100 font-heading text-center">
+			<h2 class="text-4xl text-neutral-100 font-heading text-center">
 				A Timeline of my Life
 			</h2>
 

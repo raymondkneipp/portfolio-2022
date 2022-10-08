@@ -12,7 +12,7 @@ posts.sort(
 	<main>
 		<Container>
 			<section class="space-y-6 py-24">
-				<h1 class="text-neutral-100 text-5xl font-bold font-heading">Blog</h1>
+				<h1 class="text-neutral-100 text-5xl font-heading">Blog</h1>
 
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
 					{
@@ -29,7 +29,7 @@ posts.sort(
 										alt={`${post.frontmatter.title}`}
 									/>
 									<div class="p-6 space-y-3 flex-1 flex flex-col">
-										<h2 class="text-neutral-100 text-2xl font-bold font-heading">
+										<h2 class="text-neutral-100 text-2xl font-heading">
 											{post.frontmatter.title}
 										</h2>
 										<p class="flex-1">{post.frontmatter.description}</p>
@@ -43,7 +43,7 @@ posts.sort(
 												class="bg-neutral-100 rounded-full"
 											/>
 											<div class="space-y-1">
-												<h2 class="font-bold text-neutral-100 font-heading">
+												<h2 class="text-neutral-100 font-heading">
 													{post.frontmatter.author}
 												</h2>
 												<p class="text-neutral-400">
