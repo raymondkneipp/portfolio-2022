@@ -228,7 +228,7 @@ const events: Event[] = [
 const Timeline: React.FC = () => {
 	return (
 		<div className="flex flex-col gap-6 py-24 container mx-auto px-3">
-			<h2 class="text-4xl text-neutral-100 font-heading text-center">
+			<h2 class="text-4xl text-neutral-100 font-heading font-semibold text-center">
 				A Timeline of my Life
 			</h2>
 
@@ -246,7 +246,9 @@ const Timeline: React.FC = () => {
 							</div>
 						) : (
 							<div className="flex flex-col items-end gap-3">
-								<h3 className="font-heading text-neutral-100">{event.title}</h3>
+								<h3 className="font-heading font-semibold text-neutral-100">
+									{event.title}
+								</h3>
 								<p className="bg-neutral-900 rounded-2xl p-3 text-neutral-300">
 									{event.content}
 								</p>
@@ -258,7 +260,9 @@ const Timeline: React.FC = () => {
 
 						{i % 2 === 0 ? (
 							<div className="flex flex-col items-start gap-3">
-								<h3 className="font-heading text-neutral-100">{event.title}</h3>
+								<h3 className="font-heading font-semibold text-neutral-100">
+									{event.title}
+								</h3>
 								<p className="bg-neutral-900 rounded-2xl p-3 text-neutral-300">
 									{event.content}
 								</p>
@@ -283,7 +287,9 @@ const Timeline: React.FC = () => {
 							<span className="bg-blue-400 px-1.5 rounded-2xl text-neutral-900 text-center">
 								{months[event.month - 1]} {event.year}
 							</span>
-							<h3 className="font-heading text-neutral-100">{event.title}</h3>
+							<h3 className="font-heading font-semibold text-neutral-100">
+								{event.title}
+							</h3>
 						</div>
 						<p className="bg-neutral-900 rounded-2xl p-3 text-neutral-300 ml-[22px]">
 							{event.content}
