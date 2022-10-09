@@ -92,7 +92,7 @@ const events: Event[] = [
 		year: 2017,
 		month: 12,
 		content:
-			"I received 32 credits by taking dual credit courses in my last year and a half of high school, focusing on software development, and I made the dean's list.",
+			"I received 27 credits by taking dual credit courses in my last year and a half of high school, focusing on software development, and I made the dean's list.",
 	},
 	{
 		title: 'Angular',
@@ -170,7 +170,7 @@ const events: Event[] = [
 		title: 'Southern New Hampshire University',
 		year: 2019,
 		month: 12,
-		content: 'I received 27 credits toward a B.S. in Computer Science.',
+		content: 'I received 32 credits toward a B.S. in Computer Science.',
 	},
 	{
 		title: "Al's Sweeper & Sewing Center",
