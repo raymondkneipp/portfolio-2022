@@ -109,7 +109,21 @@ To get a local copy up and running follow these simple steps.
 7. Create two email templates. One for the contact form and the other for a coupon.
 8. Set the template ID for each in `.env`
 9. Create a GitHub Personal Access Token with access to `repos` [https://github.com/settings/tokens](https://github.com/settings/tokens)
-10. Start local server
+10. Change **line 9** in `/src/components/Portfolio.astro` from
+
+```
+user(login: "raymondkneipp") {
+```
+
+to
+
+```
+user(login: "YOUR_GITHUB_USERNAME") {
+```
+
+> The query returns your pinned repositories.
+
+11. Start local server
     ```sh
     npm run dev
     ```
@@ -132,11 +146,9 @@ Feel free to change the information presented on this webpage and create your ow
 
 - [ ] Clean code
 - [ ] Marketing Page -> https://primer.tailwindui.com/
-- [x] Blog SEO config
 - [ ] FAQ
 - [ ] Testimonials
 - [ ] About page -> https://www.namchee.dev/about/
-- [ ] Preview and Source buttons should open in new tabs
 - [ ] Blog post share buttons
 
 ## Blog Post Ideas
