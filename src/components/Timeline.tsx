@@ -82,7 +82,7 @@ const events: Event[] = [
 			"I created a website for my Boy Scout Troop. Scouts were able to log in to check their scout account balances. The troop treasurer could log in and adjust the scout's balances.",
 	},
 	{
-		title: 'College Courses',
+		title: 'University of Cincinnati',
 		year: 2017,
 		month: 12,
 		content:
@@ -167,7 +167,7 @@ const events: Event[] = [
 		content: 'I obtained the MOS Digital Wideband Systems Maintainer (2831).',
 	},
 	{
-		title: 'SNHU',
+		title: 'Southern New Hampshire University',
 		year: 2019,
 		month: 12,
 		content: 'I received 27 credits toward a B.S. in Computer Science.',
