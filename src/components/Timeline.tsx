@@ -82,6 +82,12 @@ const events: Event[] = [
 			"I created a website for my Boy Scout Troop. Scouts were able to log in to check their scout account balances. The troop treasurer could log in and adjust the scout's balances.",
 	},
 	{
+		title: 'My First Job',
+		year: 2017,
+		month: 5,
+		content: "I started working for Sam's Club.",
+	},
+	{
 		title: 'University of Cincinnati',
 		year: 2017,
 		month: 12,
@@ -107,12 +113,6 @@ const events: Event[] = [
 		month: 5,
 		content:
 			'I graduated with an honors diploma and was inducted into the National Honors Society.',
-	},
-	{
-		title: 'My First Job',
-		year: 2018,
-		month: 5,
-		content: "I started working for Sam's Club.",
 	},
 	{
 		title: 'Boot Camp',
