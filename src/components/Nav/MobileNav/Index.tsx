@@ -20,7 +20,7 @@ const MobileNav: React.FC = () => {
 			{({ open }) => (
 				<>
 					<Popover.Button
-						className="text-neutral-100 p-3 hover:bg-neutral-900 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
+						className="z-50 relative text-neutral-100 p-3 hover:bg-neutral-900 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
 						aria-label="menu"
 					>
 						{open ? (
@@ -29,6 +29,8 @@ const MobileNav: React.FC = () => {
 							<HiMenu size={24} aria-hidden="true" />
 						)}
 					</Popover.Button>
+
+					<Popover.Overlay className="fixed inset-0 bg-black opacity-80 z-10" />
 
 					<Popover.Panel className="absolute z-40 left-0 right-0 top-full bg-neutral-900 p-3 m-3 rounded-lg shadow-lg grid grid-cols-2">
 						<Link to="/#" icon={HiHome}>
