@@ -15,7 +15,7 @@ const DropDown: React.FC = () => {
 			{({ open, close }) => (
 				<>
 					<Popover.Button
-						className="text-neutral-400 hover:text-neutral-100 py-1.5 px-3 hover:bg-neutral-900 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400 flex items-center gap-1"
+						className="text-neutral-400 hover:text-neutral-100 py-1.5 px-3 hover:bg-neutral-900 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400 flex items-center gap-1 transition"
 						aria-label="menu"
 					>
 						More <IoCaretDown />

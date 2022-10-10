@@ -249,7 +249,7 @@ const Timeline: React.FC = () => {
 								<h3 className="font-heading font-semibold text-neutral-100">
 									{event.title}
 								</h3>
-								<p className="bg-neutral-900 rounded-2xl p-3 text-neutral-300">
+								<p className="border border-neutral-800 rounded-2xl p-3 text-neutral-300">
 									{event.content}
 								</p>
 							</div>
@@ -263,7 +263,7 @@ const Timeline: React.FC = () => {
 								<h3 className="font-heading font-semibold text-neutral-100">
 									{event.title}
 								</h3>
-								<p className="bg-neutral-900 rounded-2xl p-3 text-neutral-300">
+								<p className="border border-neutral-800 rounded-2xl p-3 text-neutral-300">
 									{event.content}
 								</p>
 							</div>
@@ -291,7 +291,7 @@ const Timeline: React.FC = () => {
 								{event.title}
 							</h3>
 						</div>
-						<p className="bg-neutral-900 rounded-2xl p-3 text-neutral-300 ml-[22px]">
+						<p className="border border-neutral-800 rounded-2xl p-3 text-neutral-300 ml-[22px]">
 							{event.content}
 						</p>
 					</div>
