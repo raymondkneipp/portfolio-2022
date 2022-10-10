@@ -32,7 +32,7 @@ export const Project: React.FC<Props> = ({
 			<a
 				href={url}
 				target="_blank"
-				className="text-neutral-400 hover:text-neutral-100 transition select-all basis-1/2"
+				className="text-neutral-400 hover:text-neutral-100 transition select-all basis-1/2 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400 overflow-hidden"
 			>
 				<img
 					src={image}
@@ -40,7 +40,7 @@ export const Project: React.FC<Props> = ({
 					className="rounded-2xl"
 				/>
 			</a>
-			<div className="flex flex-col gap-3 basis-1/2">
+			<div className="flex flex-col gap-3 basis-1/2 items-start">
 				<div className="flex items-baseline gap-3">
 					<h3 className="text-2xl text-neutral-100 capitalize font-heading font-semibold">
 						{name}
@@ -50,7 +50,7 @@ export const Project: React.FC<Props> = ({
 				<a
 					href={url}
 					target="_blank"
-					className="text-neutral-400 hover:text-neutral-100 transition select-all"
+					className="text-neutral-400 hover:text-neutral-100 transition select-all rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
 				>
 					{url.replace(/^https?:\/\//, '').replace(/\/+$/, '')}
 				</a>
@@ -66,7 +66,7 @@ export const Project: React.FC<Props> = ({
 						<a
 							href={source}
 							target="_blank"
-							className="text-blue-400 hover:text-blue-300 transition flex gap-1 items-center justify-start"
+							className="text-blue-400 hover:text-blue-300 transition flex gap-1 items-center justify-start rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
 						>
 							<HiExternalLink />
 							<span>View source code on GitHub</span>
@@ -79,7 +79,7 @@ export const Project: React.FC<Props> = ({
 						<a
 							href={`https://github.com/topics/${topic.topic.name}`}
 							target="_blank"
-							className="text-sm bg-neutral-800 text-neutral-400 rounded-full py-1 px-2 hover:text-white transition"
+							className="text-sm bg-neutral-800 text-neutral-400 rounded-full py-1 px-2 hover:text-white transition focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
 							key={topic.topic.name}
 						>
 							{topic.topic.name}
