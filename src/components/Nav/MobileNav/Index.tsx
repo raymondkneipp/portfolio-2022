@@ -45,7 +45,7 @@ const MobileNav: React.FC = () => {
 						<Link to="/#website-projects" icon={HiCollection}>
 							Projects
 						</Link>
-						<Link to="/#contact" icon={HiMail}>
+						<Link to="/#contact-me" icon={HiMail}>
 							Contact
 						</Link>
 						<div className="bg-neutral-800 h-px my-3 col-span-full" />
