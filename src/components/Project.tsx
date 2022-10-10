@@ -80,6 +80,7 @@ export const Project: React.FC<Props> = ({
 							href={`https://github.com/topics/${topic.topic.name}`}
 							target="_blank"
 							className="text-sm bg-neutral-800 text-neutral-400 rounded-full py-1 px-2 hover:text-white transition"
+							key={topic.topic.name}
 						>
 							{topic.topic.name}
 						</a>
