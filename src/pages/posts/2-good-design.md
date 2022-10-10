@@ -119,4 +119,4 @@ Website accessibility refers to the degree to which a website design can be used
 
 ### Summary
 
-I explained many different details about good web design. I explained how your site needs a clear purpose, superior structure, be user-friendly, and provide good SEO. It takes many years to master all these techniques. I have been studying and building websites for more than 8 years, so if you have questions, [contact me](https://www.raymondkneipp.com/#contact). I would be happy to help.
+I explained many different details about good web design. I explained how your site needs a clear purpose, superior structure, be user-friendly, and provide good SEO. It takes many years to master all these techniques. I have been studying and building websites for more than 8 years, so if you have questions, [contact me](https://www.raymondkneipp.com/#contact-me). I would be happy to help.
