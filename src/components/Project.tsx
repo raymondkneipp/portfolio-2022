@@ -58,7 +58,7 @@ export const Project: React.FC<Props> = ({
 
 				<div>
 					{source === false ? (
-						<div class="cursor-not-allowed text-neutral-400 flex gap-1 items-center justify-start">
+						<div className="cursor-not-allowed text-neutral-400 flex gap-1 items-center justify-start">
 							<HiLockClosed />
 							<span>This is a private repository</span>
 						</div>
