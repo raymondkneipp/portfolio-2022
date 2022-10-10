@@ -1,5 +1,6 @@
 ---
 import Container from '@components/Container.astro';
+import DropDown from './DropDown/Index';
 import Link from './Link/Index.astro';
 import MobileNav from './MobileNav/Index';
 ---
@@ -14,12 +15,13 @@ import MobileNav from './MobileNav/Index';
 				>
 					<img src="/logo.svg" width="80px" alt="RK Web Design Logo" />
 				</a>
-				<div class="space-x-3 hidden sm:flex">
+				<div class="gap-3 hidden sm:flex">
 					<Link to="/#">Home</Link>
 					<Link to="/blog">Blog</Link>
 					<Link to="/about">About</Link>
 					<Link to="/#website-projects">Projects</Link>
 					<Link to="/#contact-me">Contact</Link>
+					<DropDown client:load />
 				</div>
 				<MobileNav client:load />
 			</div>
