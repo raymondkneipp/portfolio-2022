@@ -39,7 +39,7 @@ const DropDown: React.FC = () => {
 							GitHub
 						</Link>
 						<Link
-							to="/20220930-resume.pdf"
+							to="/resume.pdf"
 							icon={HiDocumentText}
 							onClick={() => close()}
 							target="_blank"
