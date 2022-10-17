@@ -144,9 +144,7 @@ Feel free to change the information presented on this webpage and create your ow
 
 ## Roadmap
 
-- [ ] Clean code
 - [ ] Marketing Page -> https://primer.tailwindui.com/
-- [ ] FAQ
 - [ ] Testimonials
 - [ ] About page -> https://www.namchee.dev/about/
 - [ ] Blog post share buttons
