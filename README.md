@@ -12,23 +12,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/raymondkneipp/portfolio">
+  <a href="https://github.com/raymondkneipp/portfolio-2022">
     <img src="public/logo-outline.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Portfolio</h3>
+<h3 align="center">Portfolio 2022</h3>
 
   <p align="center">
 		My portfolio website showcasing my pinned repositories.
     <br />
-    <a href="https://github.com/raymondkneipp/portfolio"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/raymondkneipp/portfolio-2022"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://raymondkneipp2022.vercel.app/">View Demo</a>
     ·
-    <a href="https://github.com/raymondkneipp/portfolio/issues">Report Bug</a>
+    <a href="https://github.com/raymondkneipp/portfolio-2022/issues">Report Bug</a>
     ·
-    <a href="https://github.com/raymondkneipp/portfolio/issues">Request Feature</a>
+    <a href="https://github.com/raymondkneipp/portfolio-2022/issues">Request Feature</a>
   </p>
 </div>
 
@@ -45,16 +45,13 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -62,7 +59,7 @@
 
 ## About The Project
 
-[![Portfolio Screen Shot][product-screenshot]](https://portfolio.vercel.app/)
+[![Portfolio Screen Shot][product-screenshot]](https://raymondkneipp2022.vercel.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -84,19 +81,11 @@
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/en/)
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/raymondkneipp/portfolio.git
+   git clone https://github.com/raymondkneipp/portfolio-2022.git
    ```
 2. Install NPM packages
    ```sh
@@ -130,16 +119,6 @@ user(login: "YOUR_GITHUB_USERNAME") {
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-Feel free to change the information presented on this webpage and create your own website.
-
-<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- ROADMAP -->
 
 ## Roadmap
@@ -152,8 +131,6 @@ Feel free to change the information presented on this webpage and create your ow
 ## Blog Post Ideas
 
 - [ ] Impove SEO
-
-See the [open issues](https://github.com/raymondkneipp/portfolio/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -188,15 +165,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Raymond Kneipp - [@rfkquery](https://twitter.com/rfkquery) - hello@raymondkneipp.com
 
-Project Link: [https://github.com/raymondkneipp/portfolio](https://github.com/raymondkneipp/portfolio)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-- [Astro](https://astro.build/)
+Project Link: [https://github.com/raymondkneipp/portfolio-2022](https://github.com/raymondkneipp/portfolio-2022)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
