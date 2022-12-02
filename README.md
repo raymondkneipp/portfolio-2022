@@ -24,7 +24,7 @@
     <a href="https://github.com/raymondkneipp/portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://portfolio.vercel.app/">View Demo</a>
+    <a href="https://raymondkneipp2022.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/raymondkneipp/portfolio/issues">Report Bug</a>
     ·
